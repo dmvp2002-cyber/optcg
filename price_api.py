@@ -25,6 +25,7 @@ def scrape_prices(card_id: str):
     if len(card_id)>8:
         card_id=card_id[:8]+"?"+card_id[8:]
         card_id=card_id.upper()
+        card_id=card_id[:12]
     else:
         card_id=card_id[:8]
     url = BASE_URL.format(card_id)
