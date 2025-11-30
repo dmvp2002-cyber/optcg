@@ -23,7 +23,8 @@ BASE_URL = "https://onepiece.limitlesstcg.com/cards/{}"
 # Example scraper function (replace with your real one)
 def scrape_prices(card_id: str):
     if len(card_id)>8:
-        card_id=card_id[:8]+"?"+card_id[3:]
+        card_id=card_id[:8]+"?"+card_id[8:]
+        card_id=card_id.upper()
     url = BASE_URL.format(card_id)
     r = requests.get(url)
     r.raise_for_status()
