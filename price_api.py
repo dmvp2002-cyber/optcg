@@ -9,10 +9,40 @@ import requests
 from bs4 import BeautifulSoup
 import time
 from datetime import datetime, timedelta
+import os
 
 # Simple cache: { card_id: { "timestamp": datetime, "data": {...} } }
 PRICE_CACHE = {}
 CACHE_TTL = timedelta(hours=24)
+CACHE_FILE = "price_cache.json"
+
+# Load persistent cache at startup
+if os.path.exists(CACHE_FILE):
+    try:
+        with open(CACHE_FILE, "r") as f:
+            raw = json.load(f)
+            for key, val in raw.items():
+                PRICE_CACHE[key] = {
+                    "timestamp": datetime.fromisoformat(val["timestamp"]),
+                    "data": val["data"]
+                }
+        print("Loaded persistent cache:", len(PRICE_CACHE))
+    except Exception as e:
+        print("Failed to load persistent cache:", e)
+
+def save_cache_to_disk():
+    try:
+        serializable = {
+            key: {
+                "timestamp": val["timestamp"].isoformat(),
+                "data": val["data"]
+            }
+            for key, val in PRICE_CACHE.items()
+        }
+        with open(CACHE_FILE, "w") as f:
+            json.dump(serializable, f)
+    except Exception as e:
+        print("Failed to save cache:", e)
 
 
 app = FastAPI()
@@ -27,14 +57,30 @@ app.add_middleware(
 BASE_URL = "https://onepiece.limitlesstcg.com/cards/{}"
 # Example scraper function (replace with your real one)
 def scrape_prices(card_id: str):
-    card_id=str(card_id)
-    if len(card_id)>8:
-        card_id=card_id[:8]+"?"+card_id[8:]
-        card_id=card_id.upper()
-    else:
-        card_id=card_id[:8]
+    card_id = str(card_id).upper()
 
-    url = BASE_URL.format(card_id)
+    # Accept formats like OP13-002 or OP13-002V=1
+    if "V=" in card_id:
+        base_id, version_str = card_id.split("V=")
+        try:
+            version = int(version_str)
+        except:
+            version = 0
+    else:
+        base_id = card_id
+        version = 0
+
+    # Normalize base ID to first 8 chars
+    base_id = base_id[:8]
+
+    # Limitless format for versioned cards:
+    # Base + "?v=<version>"
+    if version > 0:
+        formatted_id = f"{base_id}?v={version}"
+    else:
+        formatted_id = base_id
+
+    url = BASE_URL.format(formatted_id)
     r = requests.get(url)
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
@@ -148,6 +194,7 @@ def get_price(card_id: str):
         "timestamp": now,
         "data": prices
     }
+    save_cache_to_disk()
 
     return {"card_id": card_id, "prices": prices, "cached": False}
 
