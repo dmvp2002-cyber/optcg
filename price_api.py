@@ -8,6 +8,11 @@ import re
 import requests
 from bs4 import BeautifulSoup
 import time
+from datetime import datetime, timedelta
+
+# Simple cache: { card_id: { "timestamp": datetime, "data": {...} } }
+PRICE_CACHE = {}
+CACHE_TTL = timedelta(hours=24)
 
 
 app = FastAPI()
@@ -127,11 +132,26 @@ def scrape_prices(card_id: str):
 
 @app.get("/price/{card_id}")
 def get_price(card_id: str):
+    now = datetime.utcnow()
+
+    # Check cache
+    cached = PRICE_CACHE.get(card_id)
+    if cached:
+        if now - cached["timestamp"] < CACHE_TTL:
+            return {"card_id": card_id, "prices": cached["data"], "cached": True}
+
+    # Not cached or expired → scrape
     prices = scrape_prices(card_id)
-    return {"card_id": card_id, "prices": prices}
+
+    # Save to cache
+    PRICE_CACHE[card_id] = {
+        "timestamp": now,
+        "data": prices
+    }
+
+    return {"card_id": card_id, "prices": prices, "cached": False}
 
 if __name__ == "__main__":
     uvicorn.run("price_api:app", host="0.0.0.0", port=8000, reload=True)
-
 
 
