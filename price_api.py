@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 import time
 from datetime import datetime, timedelta
 import os
+import sqlite3
 
 # Simple cache: { card_id: { "timestamp": datetime, "data": {...} } }
 PRICE_CACHE = {}
@@ -197,6 +198,28 @@ def get_price(card_id: str):
     save_cache_to_disk()
 
     return {"card_id": card_id, "prices": prices, "cached": False}
+
+@app.get("/history/{card_id}")
+def get_history(card_id: str):
+    try:
+        conn = sqlite3.connect("history.db")
+        cursor = conn.cursor()
+
+        cursor.execute(
+            "SELECT date, eur_price, usd_price FROM card_history WHERE card_id = ? ORDER BY date",
+            (card_id,)
+        )
+
+        rows = cursor.fetchall()
+        conn.close()
+
+        return [
+            {"date": d, "eur": eur, "usd": usd}
+            for (d, eur, usd) in rows
+        ]
+
+    except Exception as e:
+        return {"error": str(e)}
 
 if __name__ == "__main__":
     uvicorn.run("price_api:app", host="0.0.0.0", port=8000, reload=True)
