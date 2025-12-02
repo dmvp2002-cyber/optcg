@@ -12,6 +12,27 @@ from datetime import datetime, timedelta
 import os
 import sqlite3
 
+# --- CREATE history.db automatically on startup ---
+def init_history_db():
+    conn = sqlite3.connect("history.db")
+    cursor = conn.cursor()
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS card_history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        card_id TEXT NOT NULL,
+        date TEXT NOT NULL,
+        eur_price REAL,
+        usd_price REAL
+    )
+    """)
+
+    conn.commit()
+    conn.close()
+
+# Run DB initialization
+init_history_db()
+
 # Simple cache: { card_id: { "timestamp": datetime, "data": {...} } }
 PRICE_CACHE = {}
 CACHE_TTL = timedelta(hours=24)
