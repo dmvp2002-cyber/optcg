@@ -7,6 +7,10 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import os
+import sqlite3  # <-- NEW
+
+# Path to your history database (created by daily_snapshot.py)
+DB_PATH = "history.db"
 
 # Simple cache: { card_id: { "timestamp": datetime, "data": {...} } }
 PRICE_CACHE = {}
@@ -62,19 +66,17 @@ BASE_URL = "https://onepiece.limitlesstcg.com/cards/{}"
 def scrape_prices(card_id: str):
     card_id = card_id.upper().replace("?", "")
 
-
-    
     # Extract base ID (handles OP, EB, ST, PRB, PR, CP, etc.)
     m = re.match(r"([A-Z]+[0-9]{2}-[0-9]{3})", card_id)
     if not m:
         raise ValueError(f"Invalid card_id format: {card_id}")
-    
+
     base = m.group(1)
-    
+
     # Extract version number
     m2 = re.search(r"V=(\d+)", card_id)
     version = int(m2.group(1)) if m2 else 0
-    
+
     # Format ID for Limitless
     if version > 0:
         formatted = f"{base}?v={version}"
@@ -166,6 +168,51 @@ def get_price(card_id: str):
     save_cache_to_disk()
 
     return {"card_id": card_id, "prices": prices, "cached": False}
+
+
+# ------------------------------------------------------
+# NEW: HISTORY ENDPOINT (for graphs)
+# ------------------------------------------------------
+@app.get("/history/{card_id}")
+def get_history(card_id: str, limit: int = 365):
+    """
+    Returns historical EUR/USD prices for a given card_id, e.g.
+    /history/OP13-001v=0?limit=90
+    """
+    # Normalize the ID in the same style as stored in history.db
+    cid = card_id.upper().replace("?", "").strip()
+
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+
+        cursor.execute(
+            """
+            SELECT date, eur_price, usd_price
+            FROM card_history
+            WHERE card_id = ?
+            ORDER BY date ASC
+            LIMIT ?
+            """,
+            (cid, limit),
+        )
+
+        rows = cursor.fetchall()
+        conn.close()
+
+        history = [
+            {"date": d, "eur": eur, "usd": usd}
+            for (d, eur, usd) in rows
+        ]
+
+        return {
+            "card_id": cid,
+            "count": len(history),
+            "history": history,
+        }
+
+    except Exception as e:
+        return {"card_id": cid, "error": str(e)}
 
 
 if __name__ == "__main__":
