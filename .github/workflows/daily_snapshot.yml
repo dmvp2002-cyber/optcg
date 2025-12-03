@@ -2,18 +2,18 @@ name: Daily Price Snapshot
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # Runs every day at 00:00 UTC
-  workflow_dispatch:       # Allow manual run
+    - cron: "0 0 * * *"   # Runs daily at 00:00 UTC
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: true   # Needed to push back changes
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -23,7 +23,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install aiohttp
+          pip install -r requirements.txt
 
       - name: Run daily snapshot
         run: |
@@ -33,10 +33,10 @@ jobs:
         run: |
           git config --local user.name "GitHub Actions"
           git config --local user.email "actions@github.com"
-          
+
           git add history.db
-          
-          # Skip commit if no changes
+
+          # Commit only if file changed
           git diff --cached --quiet || git commit -m "Daily snapshot update $(date -u +"%Y-%m-%d")"
-          
+
           git push
