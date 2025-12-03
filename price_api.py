@@ -1,13 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
-from dataclasses import dataclass
-from typing import List, Optional
 import json
 import re
 import requests
 from bs4 import BeautifulSoup
-import time
 from datetime import datetime, timedelta
 import os
 
@@ -24,18 +21,19 @@ if os.path.exists(CACHE_FILE):
             for key, val in raw.items():
                 PRICE_CACHE[key] = {
                     "timestamp": datetime.fromisoformat(val["timestamp"]),
-                    "data": val["data"]
+                    "data": val["data"],
                 }
         print("Loaded persistent cache:", len(PRICE_CACHE))
     except Exception as e:
         print("Failed to load persistent cache:", e)
+
 
 def save_cache_to_disk():
     try:
         serializable = {
             key: {
                 "timestamp": val["timestamp"].isoformat(),
-                "data": val["data"]
+                "data": val["data"],
             }
             for key, val in PRICE_CACHE.items()
         }
@@ -54,15 +52,20 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 BASE_URL = "https://onepiece.limitlesstcg.com/cards/{}"
-# Example scraper function (replace with your real one)
+
+
+# ------------------------------------------------------
+# FIXED SCRAPER — version-correct prices + links restored
+# ------------------------------------------------------
 def scrape_prices(card_id: str):
     card_id = card_id.upper().replace("?", "")
 
     # Extract base ID and version
     if "V=" in card_id:
         base, version_str = card_id.split("V=")
-        base = base[:8]
+        base = base[:8]  # OP13-108
         try:
             version = int(version_str)
         except:
@@ -80,57 +83,70 @@ def scrape_prices(card_id: str):
     url = BASE_URL.format(formatted)
     r = requests.get(url)
     r.raise_for_status()
-
     soup = BeautifulSoup(r.text, "html.parser")
 
-    # -----------------------------
-    # UNIVERSAL PRINT TABLE FINDER
-    # Works for ALL Limitless formats
-    # -----------------------------
+    # UNIVERSAL TABLE FINDER
     table = (
-        soup.select_one("table.prints-table") or
-        soup.select_one("div.card-prints table") or
-        soup.select_one("div.price-table table") or
-        soup.select_one("table")  # fallback (will filter)
+        soup.select_one("table.prints-table")
+        or soup.select_one("div.card-prints table")
+        or soup.select_one("div.price-table table")
+        or soup.select_one("table")
     )
 
     if not table:
         print("NO TABLE FOUND for", card_id)
-        return {"usd_price": 0, "eur_price": 0}
+        return {
+            "usd_price": 0,
+            "usd_url": None,
+            "eur_price": 0,
+            "eur_url": None,
+        }
 
     dollar = []
     euro = []
+    usd_urls = []
+    eur_urls = []
 
     for row in table.select("tr"):
         if row.find("th"):
             continue
 
-        # USD cell
+        # USD price + URL
         usd_link = row.select_one("a.card-price.usd")
         if usd_link:
-            m = re.search(r"([\d\.,]+)", usd_link.text)
-            usd = float(m.group(1).replace(",", "")) if m else 0
+            m_usd = re.search(r"([\d\.,]+)", usd_link.get_text())
+            usd_price = float(m_usd.group(1).replace(",", "")) if m_usd else 0
+            usd_url = usd_link["href"]
         else:
-            usd = 0
-        dollar.append(usd)
+            usd_price = 0
+            usd_url = None
 
-        # EUR cell
+        # EUR price + URL
         eur_link = row.select_one("a.card-price.eur")
         if eur_link:
-            m2 = re.search(r"([\d\.,]+)", eur_link.text)
-            eur = float(m2.group(1).replace(",", "")) if m2 else 0
+            m_eur = re.search(r"([\d\.,]+)", eur_link.get_text())
+            eur_price = float(m_eur.group(1).replace(",", "")) if m_eur else 0
+            eur_url = eur_link["href"]
         else:
-            eur = 0
-        euro.append(eur)
+            eur_price = 0
+            eur_url = None
 
-    # Avoid out of range version index
-    if version >= len(euro):
+        dollar.append(usd_price)
+        euro.append(eur_price)
+        usd_urls.append(usd_url)
+        eur_urls.append(eur_url)
+
+    # Avoid out-of-range version index
+    if version >= len(dollar):
         version = 0
 
     return {
         "usd_price": dollar[version],
-        "eur_price": euro[version]
+        "usd_url": usd_urls[version],
+        "eur_price": euro[version],
+        "eur_url": eur_urls[version],
     }
+
 
 @app.get("/price/{card_id}")
 def get_price(card_id: str):
@@ -138,21 +154,18 @@ def get_price(card_id: str):
 
     # Check cache
     cached = PRICE_CACHE.get(card_id)
-    if cached:
-        if now - cached["timestamp"] < CACHE_TTL:
-            return {"card_id": card_id, "prices": cached["data"], "cached": True}
+    if cached and now - cached["timestamp"] < CACHE_TTL:
+        return {"card_id": card_id, "prices": cached["data"], "cached": True}
 
     # Not cached or expired → scrape
     prices = scrape_prices(card_id)
 
     # Save to cache
-    PRICE_CACHE[card_id] = {
-        "timestamp": now,
-        "data": prices
-    }
+    PRICE_CACHE[card_id] = {"timestamp": now, "data": prices}
     save_cache_to_disk()
 
     return {"card_id": card_id, "prices": prices, "cached": False}
+
 
 if __name__ == "__main__":
     uvicorn.run("price_api:app", host="0.0.0.0", port=8000, reload=True)
