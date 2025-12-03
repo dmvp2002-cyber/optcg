@@ -57,123 +57,79 @@ app.add_middleware(
 BASE_URL = "https://onepiece.limitlesstcg.com/cards/{}"
 # Example scraper function (replace with your real one)
 def scrape_prices(card_id: str):
-    card_id = str(card_id).upper()
+    card_id = card_id.upper().replace("?", "")
 
-    # Accept formats like OP13-002 or OP13-002V=1
+    # Extract base ID and version
     if "V=" in card_id:
-        base_id, version_str = card_id.split("V=")
+        base, version_str = card_id.split("V=")
+        base = base[:8]
         try:
             version = int(version_str)
         except:
             version = 0
     else:
-        base_id = card_id
+        base = card_id[:8]
         version = 0
 
-    # Normalize base ID to first 8 chars
-    base_id = base_id[:8]
-
-    # Limitless format for versioned cards:
-    # Base + "?v=<version>"
+    # Format ID for URL
     if version > 0:
-        formatted_id = f"{base_id}?v={version}"
+        formatted = f"{base}?v={version}"
     else:
-        formatted_id = base_id
+        formatted = base
 
-    url = BASE_URL.format(formatted_id)
+    url = BASE_URL.format(formatted)
     r = requests.get(url)
     r.raise_for_status()
+
     soup = BeautifulSoup(r.text, "html.parser")
-    
-    main = soup.select_one("div.card-details-main")
-    if main is None:
-        raise ValueError(f"card-details-main not found for {code}")
-    
-        # --- Prints Table ----------------------------------------------------
-    prints: list[CardPrint] = []
 
-    # Try known classes first
-    table = soup.select_one("table.prints-table")
+    # -----------------------------
+    # UNIVERSAL PRINT TABLE FINDER
+    # Works for ALL Limitless formats
+    # -----------------------------
+    table = (
+        soup.select_one("table.prints-table") or
+        soup.select_one("div.card-prints table") or
+        soup.select_one("div.price-table table") or
+        soup.select_one("table")  # fallback (will filter)
+    )
 
-    # If not found, try the card-prints wrapper
     if not table:
-        div = soup.select_one("div.card-prints")
-        if div:
-            table = div.select_one("table")
+        print("NO TABLE FOUND for", card_id)
+        return {"usd_price": 0, "eur_price": 0}
 
-    # Fallback: find any table whose header contains "Print"
-    if not table:
-        for t in soup.select("table"):
-            header = t.get_text(" ", strip=True)
-            if "Print" in header and "USD" in header and "EUR" in header:
-                table = t
-                break
+    dollar = []
+    euro = []
 
-    # If still not found -> no prints for this card
-    if not table:
-        print("WARNING: No prints table found for", card_id)
-    else:
-        dollar=[]
-        euro=[]
-        for row in table.select("tr"):
-            
-            # skip header row
-            if row.find("th"):
-                continue
+    for row in table.select("tr"):
+        if row.find("th"):
+            continue
 
-            is_current = "current" in (row.get("class") or [])
-
-            # PRINT NAME + VERSION
-            name_cell = row.select_one("td:nth-of-type(1) a")
-            
-            raw_name = name_cell.get_text(" ", strip=True) if name_cell else ""
-            m_version = re.search(r"\b([A-Za-z0-9]{1,3})$", raw_name)
-            version = m_version.group(1) if m_version else None
-            name = raw_name.replace(version or "", "").strip()
-
-            # USD
-            usd_link = row.select_one("a.card-price.usd")
-            usd_url = usd_link["href"] if usd_link else None
-            usd_price = None
-            if usd_link:
-                m_usd = re.search(r"([\d\.\,]+)", usd_link.get_text())
-                if m_usd:
-                    usd_price = str(m_usd.group(1))
-                    usd_price=usd_price.replace(",","")
-                    usd_price=float(usd_price)
-                    dollar.append(usd_price)
-            else:
-                dollar.append(0)
-
-
-            # EUR
-            eur_link = row.select_one("a.card-price.eur")
-            eur_url = eur_link["href"] if eur_link else None
-            eur_price = None
-            if eur_link:
-                m_eur = re.search(r"([\d\.\,]+)", eur_link.get_text())
-                if m_eur:
-                    eur_price = str(m_eur.group(1))
-                    eur_price=eur_price.replace(",","")
-                    eur_price=float(eur_price)
-                    euro.append(eur_price)
-            else:
-                euro.append(0)
-        if ("?" in url):
-            card_version_dollar=int(url[-1])
+        # USD cell
+        usd_link = row.select_one("a.card-price.usd")
+        if usd_link:
+            m = re.search(r"([\d\.,]+)", usd_link.text)
+            usd = float(m.group(1).replace(",", "")) if m else 0
         else:
-            card_version_dollar=0
+            usd = 0
+        dollar.append(usd)
 
-        if ("?" in url):
-            card_version_euro=int(url[-1])
+        # EUR cell
+        eur_link = row.select_one("a.card-price.eur")
+        if eur_link:
+            m2 = re.search(r"([\d\.,]+)", eur_link.text)
+            eur = float(m2.group(1).replace(",", "")) if m2 else 0
         else:
-            card_version_euro=0
-    # TODO: replace with your real scraping logic
+            eur = 0
+        euro.append(eur)
+
+    # Avoid out of range version index
+    if version >= len(euro):
+        version = 0
+
     return {
-        "usd_price": dollar[card_version_dollar],
-        "usd_url": usd_url,
-        "eur_price": euro[card_version_euro],
-        "eur_url": eur_url,
+        "usd_price": dollar[version],
+        "eur_price": euro[version]
     }
 
 @app.get("/price/{card_id}")
