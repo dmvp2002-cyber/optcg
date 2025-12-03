@@ -65,7 +65,7 @@ def scrape_prices(card_id: str):
     # Extract base ID and version
     if "V=" in card_id:
         base, version_str = card_id.split("V=")
-        base = base[:8]  # OP13-108
+        base = base[:8]
         try:
             version = int(version_str)
         except:
@@ -73,8 +73,7 @@ def scrape_prices(card_id: str):
     else:
         base = card_id[:8]
         version = 0
-
-    # Format ID for URL
+    
     if version > 0:
         formatted = f"{base}?v={version}"
     else:
