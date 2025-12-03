@@ -62,20 +62,17 @@ BASE_URL = "https://onepiece.limitlesstcg.com/cards/{}"
 def scrape_prices(card_id: str):
     card_id = card_id.upper().replace("?", "")
 
-    # Extract base ID and version
+    if "V=" in card_id:
+        base, version_str = card_id.split("V=")
+        base = base[:8]
+        try:
+            version = int(version_str)
+        except:
+            version = 0
+    else:
+        base = card_id[:8]
+        version = 0
     
-    # Extract base ID (handles OP, EB, ST, PRB, PR, CP, etc.)
-    m = re.match(r"([A-Z]+[0-9]{2}-[0-9]{3})", card_id)
-    if not m:
-        raise ValueError(f"Invalid card_id format: {card_id}")
-    
-    base = m.group(1)
-    
-    # Extract version number
-    m2 = re.search(r"V=(\d+)", card_id)
-    version = int(m2.group(1)) if m2 else 0
-    
-    # Format ID for Limitless
     if version > 0:
         formatted = f"{base}?v={version}"
     else:
