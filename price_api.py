@@ -7,10 +7,13 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import os
-import sqlite3  # <-- NEW
+import sqlite3
 
-# Path to your history database (created by daily_snapshot.py)
-DB_PATH = "history.db"
+# ------------------------------------------------------
+# CORRECT DB PATH (absolute path inside Render container)
+# ------------------------------------------------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "history.db")
 
 # Simple cache: { card_id: { "timestamp": datetime, "data": {...} } }
 PRICE_CACHE = {}
@@ -61,7 +64,7 @@ BASE_URL = "https://onepiece.limitlesstcg.com/cards/{}"
 
 
 # ------------------------------------------------------
-# FIXED SCRAPER — version-correct prices + links restored
+# SCRAPER
 # ------------------------------------------------------
 def scrape_prices(card_id: str):
     card_id = card_id.upper().replace("?", "")
@@ -88,7 +91,6 @@ def scrape_prices(card_id: str):
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
 
-    # UNIVERSAL TABLE FINDER
     table = (
         soup.select_one("table.prints-table")
         or soup.select_one("div.card-prints table")
@@ -160,7 +162,6 @@ def get_price(card_id: str):
     if cached and now - cached["timestamp"] < CACHE_TTL:
         return {"card_id": card_id, "prices": cached["data"], "cached": True}
 
-    # Not cached or expired → scrape
     prices = scrape_prices(card_id)
 
     # Save to cache
@@ -171,7 +172,7 @@ def get_price(card_id: str):
 
 
 # ------------------------------------------------------
-# NEW: HISTORY ENDPOINT (for graphs)
+# HISTORY ENDPOINT (for graphs)
 # ------------------------------------------------------
 @app.get("/history/{card_id}")
 def get_history(card_id: str, limit: int = 365):
@@ -179,8 +180,9 @@ def get_history(card_id: str, limit: int = 365):
     Returns historical EUR/USD prices for a given card_id, e.g.
     /history/OP13-001v=0?limit=90
     """
-    # Normalize the ID in the same style as stored in history.db
-    cid = card_id.upper().replace("?", "").strip()
+
+    # FIX APPLIED HERE: remove uppercasing
+    cid = card_id.replace("?", "").strip()
 
     try:
         conn = sqlite3.connect(DB_PATH)
