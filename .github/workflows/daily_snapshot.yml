@@ -43,7 +43,7 @@ jobs:
           python3 daily_snapshot.py
 
       # --------------------------------------
-      # FORCE RENDER TO REBUILD
+      # FORCE RENDER TO REBUILD (dummy file)
       # --------------------------------------
       - name: Touch trigger file for Render
         run: |
@@ -57,11 +57,9 @@ jobs:
           git config --local user.name "GitHub Actions"
           git config --local user.email "actions@github.com"
 
-          # Prevent conflicts by rebasing before commit
-          git pull --rebase
-
           git add history.db render_trigger.txt
 
+          # Only commit if there are changes
           git diff --cached --quiet || git commit -m "Daily snapshot update $(date -u +"%Y-%m-%d")"
 
           git push
