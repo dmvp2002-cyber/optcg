@@ -1,9 +1,8 @@
-
 name: Daily Price Snapshot
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"     # Runs daily at 00:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -14,12 +13,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # --------------------------------------
+      # CHECKOUT REPO
+      # --------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: true
 
+      # --------------------------------------
+      # PYTHON SETUP
+      # --------------------------------------
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -30,16 +35,32 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # --------------------------------------
+      # RUN DAILY SNAPSHOT
+      # --------------------------------------
       - name: Run daily snapshot
         run: |
           python3 daily_snapshot.py
 
+      # --------------------------------------
+      # FORCE RENDER TO REBUILD
+      # --------------------------------------
+      - name: Touch trigger file for Render
+        run: |
+          echo "trigger=$(date +%s)" > render_trigger.txt
+
+      # --------------------------------------
+      # COMMIT & PUSH
+      # --------------------------------------
       - name: Commit & push updated history.db
         run: |
           git config --local user.name "GitHub Actions"
           git config --local user.email "actions@github.com"
 
-          git add history.db
+          # Prevent conflicts by rebasing before commit
+          git pull --rebase
+
+          git add history.db render_trigger.txt
 
           git diff --cached --quiet || git commit -m "Daily snapshot update $(date -u +"%Y-%m-%d")"
 
