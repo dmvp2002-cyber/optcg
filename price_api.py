@@ -9,15 +9,17 @@ from datetime import datetime, timedelta
 import os
 import sqlite3
 
-# ------------------------------------------------------
-# DECKS JSON PATH (for Flutter deck browser)
-# ------------------------------------------------------
-DECKS_PATH = os.path.join(BASE_DIR, "all_decks_by_region_and_set.json")
+
 # ------------------------------------------------------
 # CORRECT DB PATH (absolute path inside Render container)
 # ------------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "history.db")
+
+# ------------------------------------------------------
+# DECKS JSON PATH (for Flutter deck browser)
+# ------------------------------------------------------
+DECKS_PATH = os.path.join(BASE_DIR, "all_decks_by_region_and_set.json")
 
 # Simple cache: { card_id: { "timestamp": datetime, "data": {...} } }
 PRICE_CACHE = {}
