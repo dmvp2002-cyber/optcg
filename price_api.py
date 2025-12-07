@@ -222,9 +222,19 @@ def get_history(card_id: str, limit: int = 365):
     except Exception as e:
         return {"card_id": cid, "error": str(e)}
 # ------------------------------------------------------
-# DECKS JSON PATH (for Flutter deck browser)
 # ------------------------------------------------------
-DECKS_PATH = os.path.join(BASE_DIR, "all_decks_by_region_and_set.json")
+# DECK BROWSER ENDPOINT (for Flutter)
+# ------------------------------------------------------
+@app.get("/decks")
+def get_decks():
+    if not os.path.exists(DECKS_PATH):
+        return {"error": "Deck file not found on server"}
+
+    try:
+        with open(DECKS_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        return {"error": str(e)}
 
 
 if __name__ == "__main__":
