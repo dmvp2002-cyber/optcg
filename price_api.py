@@ -10,6 +10,10 @@ import os
 import sqlite3
 
 # ------------------------------------------------------
+# DECKS JSON PATH (for Flutter deck browser)
+# ------------------------------------------------------
+DECKS_PATH = os.path.join(BASE_DIR, "all_decks_by_region_and_set.json")
+# ------------------------------------------------------
 # CORRECT DB PATH (absolute path inside Render container)
 # ------------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -215,6 +219,10 @@ def get_history(card_id: str, limit: int = 365):
 
     except Exception as e:
         return {"card_id": cid, "error": str(e)}
+# ------------------------------------------------------
+# DECKS JSON PATH (for Flutter deck browser)
+# ------------------------------------------------------
+DECKS_PATH = os.path.join(BASE_DIR, "all_decks_by_region_and_set.json")
 
 
 if __name__ == "__main__":
