@@ -1,136 +1,249 @@
+import os
+import re
 import sqlite3
+import requests
+from bs4 import BeautifulSoup
 from datetime import datetime
-import json
-import aiohttp
-import asyncio
 
-DB_PATH = "history.db"
-BASE_URL = "https://optcg.onrender.com"
+# ------------------------------------------------------
+# PATHS
+# ------------------------------------------------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "history.db")
 
-# Load all cards
-with open("all_cards.json", "r", encoding="utf-8") as f:
-    all_cards = json.load(f)
+# ------------------------------------------------------
+# CONSTANTS
+# ------------------------------------------------------
+LIMITLESS_BASE = "https://onepiece.limitlesstcg.com/cards/{}"
+COLLECTR_URL = "https://app.getcollectr.com/?sortType=price&sortOrder=DESC&cardType={}&category=68"
+USD_TO_EUR = 0.75
 
-today = datetime.utcnow().strftime("%Y-%m-%d")
-print(f"Saving snapshot for {today}")
+TODAY = datetime.utcnow().date().isoformat()
 
-# ----------------------------
-# BUILD CLEAN CARD ID
-# ----------------------------
-def build_card_id(card):
+# ------------------------------------------------------
+# DB SETUP
+# ------------------------------------------------------
+def init_db():
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+
+    c.execute("""
+    CREATE TABLE IF NOT EXISTS card_history (
+        card_id TEXT,
+        date TEXT,
+        eur_price REAL,
+        usd_price REAL,
+        UNIQUE(card_id, date)
+    )
+    """)
+
+    c.execute("""
+    CREATE TABLE IF NOT EXISTS sealed_history (
+        name TEXT,
+        date TEXT,
+        eur_price REAL,
+        usd_price REAL,
+        UNIQUE(name, date)
+    )
+    """)
+
+    c.execute("""
+    CREATE TABLE IF NOT EXISTS don_history (
+        name TEXT,
+        date TEXT,
+        eur_price REAL,
+        usd_price REAL,
+        UNIQUE(name, date)
+    )
+    """)
+
+    conn.commit()
+    conn.close()
+
+# ------------------------------------------------------
+# HELPERS
+# ------------------------------------------------------
+def normalize_card_id(card_id: str) -> str:
     """
-    Produces EXACTLY what the API expects:
-    OP12-030v=0
-    OP09-005v=1
-    PRB02-014v=0
-    ST24-001v=0
-    EB02-003v=0
+    IMPORTANT RULE:
+    - v=0 → NO SUFFIX (OP13-001)
+    - v>=1 → OP13-001v=1
     """
-    code = card.get("code")
-    version = card.get("version")
+    cid = card_id.upper().replace("?", "").strip()
+    return cid
 
-    if not code:
-        return None
 
-    if version is None:
+def extract_versions(card_code: str):
+    """
+    Returns list of card_ids to snapshot:
+    ['OP13-001', 'OP13-001v=1', 'OP13-001v=2', ...]
+    """
+    url = LIMITLESS_BASE.format(card_code)
+    r = requests.get(url)
+    r.raise_for_status()
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    table = (
+        soup.select_one("table.prints-table")
+        or soup.select_one("div.card-prints table")
+        or soup.select_one("table")
+    )
+
+    if not table:
+        return []
+
+    versions = []
+    for idx, row in enumerate(table.select("tr")):
+        if row.find("th"):
+            continue
+        if idx == 0:
+            versions.append(card_code)  # v=0 → NO SUFFIX
+        else:
+            versions.append(f"{card_code}v={idx}")
+
+    return versions
+
+
+# ------------------------------------------------------
+# LIMITLESS PRICE SCRAPER
+# ------------------------------------------------------
+def scrape_card_price(card_id: str):
+    base = re.match(r"([A-Z]+[0-9]{2}-[0-9]{3})", card_id).group(1)
+
+    m = re.search(r"v=(\d+)", card_id)
+    version = int(m.group(1)) if m else 0
+
+    formatted = f"{base}?v={version}" if version > 0 else base
+    url = LIMITLESS_BASE.format(formatted)
+
+    r = requests.get(url)
+    r.raise_for_status()
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    table = (
+        soup.select_one("table.prints-table")
+        or soup.select_one("div.card-prints table")
+        or soup.select_one("table")
+    )
+
+    if not table:
+        return 0.0, 0.0
+
+    usd, eur = [], []
+
+    for row in table.select("tr"):
+        if row.find("th"):
+            continue
+
+        usd_link = row.select_one("a.card-price.usd")
+        eur_link = row.select_one("a.card-price.eur")
+
+        usd_val = float(re.search(r"([\d\.]+)", usd_link.text).group(1)) if usd_link else 0
+        eur_val = float(re.search(r"([\d\.]+)", eur_link.text).group(1)) if eur_link else 0
+
+        usd.append(usd_val)
+        eur.append(eur_val)
+
+    if version >= len(usd):
         version = 0
 
-    return f"{code}v={version}"
+    return eur[version], usd[version]
+
+# ------------------------------------------------------
+# COLLECTR SCRAPER
+# ------------------------------------------------------
+def scrape_collectr(card_type: str):
+    r = requests.get(COLLECTR_URL.format(card_type))
+    r.raise_for_status()
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    items = []
+
+    for card in soup.select("div.card-item"):
+        name_el = card.select_one(".card-name")
+        price_el = card.select_one(".price")
+
+        if not name_el or not price_el:
+            continue
+
+        usd = float(re.search(r"([\d\.]+)", price_el.text).group(1))
+        eur = round(usd * USD_TO_EUR, 2)
+
+        items.append((name_el.get_text(strip=True), eur, usd))
+
+    return items
+
+# ------------------------------------------------------
+# SNAPSHOT RECORDERS
+# ------------------------------------------------------
+def record_cards(cursor, card_codes):
+    for code in card_codes:
+        versions = extract_versions(code)
+
+        for cid in versions:
+            cid = normalize_card_id(cid)
+            eur, usd = scrape_card_price(cid)
+
+            cursor.execute(
+                """
+                INSERT OR IGNORE INTO card_history
+                (card_id, date, eur_price, usd_price)
+                VALUES (?, ?, ?, ?)
+                """,
+                (cid, TODAY, eur, usd),
+            )
 
 
-invalid_cards = []
-
-# ----------------------------
-# CONTROL CONCURRENCY
-# ----------------------------
-SEM = asyncio.Semaphore(10)   # <---- MAX 10 PARALLEL REQUESTS
-
-
-# ----------------------------
-# FETCH PRICE WITH RETRIES
-# ----------------------------
-async def fetch_price(session, cid, retries=3):
-    async with SEM:
-        url = f"{BASE_URL}/price/{cid}"
-
-        for attempt in range(1, retries + 1):
-            try:
-                async with session.get(url, timeout=10) as resp:
-                    status = resp.status
-
-                    # 404 = card does not exist on Limitless
-                    if status == 404:
-                        invalid_cards.append(cid)
-                        return None
-
-                    if status == 200:
-                        data = await resp.json()
-                        return cid, data
-
-                    print(f"{cid}: HTTP {status} (attempt {attempt})")
-
-            except Exception as e:
-                print(f"{cid}: ERROR {e} (attempt {attempt})")
-
-            await asyncio.sleep(0.5)
-
-        return None
+def record_sealed(cursor):
+    for name, eur, usd in scrape_collectr("sealed"):
+        cursor.execute(
+            """
+            INSERT OR IGNORE INTO sealed_history
+            (name, date, eur_price, usd_price)
+            VALUES (?, ?, ?, ?)
+            """,
+            (name, TODAY, eur, usd),
+        )
 
 
-# ----------------------------
-# RUN ALL IN PARALLEL (10 at a time)
-# ----------------------------
-async def run_all():
-    connector = aiohttp.TCPConnector(limit=50)
-    tasks = []
+def record_dons(cursor):
+    for name, eur, usd in scrape_collectr("don"):
+        cursor.execute(
+            """
+            INSERT OR IGNORE INTO don_history
+            (name, date, eur_price, usd_price)
+            VALUES (?, ?, ?, ?)
+            """,
+            (name, TODAY, eur, usd),
+        )
 
-    async with aiohttp.ClientSession(connector=connector) as session:
-        for card in all_cards:
-            cid = build_card_id(card)
-            if cid:
-                tasks.append(fetch_price(session, cid))
+# ------------------------------------------------------
+# MAIN
+# ------------------------------------------------------
+def main():
+    init_db()
 
-        results = await asyncio.gather(*tasks)
+    # EXAMPLE: load your card list from file or elsewhere
+    # This MUST be base codes ONLY (NO v=)
+    card_codes = [
+        "OP13-001",
+        "OP13-002",
+        "OP05-041",
+        # ...
+    ]
 
-        rows = []
-        for item in results:
-            if not item:
-                continue
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
 
-            cid, data = item
-            prices = data.get("prices", {})
+    record_cards(cursor, card_codes)
+    record_sealed(cursor)
+    record_dons(cursor)
 
-            eur = float(prices.get("eur_price") or 0)
-            usd = float(prices.get("usd_price") or 0)
+    conn.commit()
+    conn.close()
 
-            rows.append((cid, today, eur, usd))
-            print(f"Saved {cid}: {eur} EUR")
-
-        return rows
+    print("Daily snapshot completed:", TODAY)
 
 
-# ----------------------------
-# EXECUTE
-# ----------------------------
-rows = asyncio.run(run_all())
-
-conn = sqlite3.connect(DB_PATH)
-cursor = conn.cursor()
-
-if rows:
-    cursor.executemany(
-        "INSERT INTO card_history (card_id, date, eur_price, usd_price) VALUES (?, ?, ?, ?)",
-        rows
-    )
-    print(f"Inserted {len(rows)} rows")
-
-conn.commit()
-conn.close()
-
-# Print invalid cards
-if invalid_cards:
-    print("\n⚠️ INVALID CARDS:")
-    for c in sorted(set(invalid_cards)):
-        print(" -", c)
-
-print("\nDaily snapshot complete! 🎉")
+if __name__ == "__main__":
+    main()
