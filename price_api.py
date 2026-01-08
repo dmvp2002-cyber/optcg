@@ -211,7 +211,7 @@ def get_sealed_cached():
 
 
 # ------------------------------------------------------
-# DON / SEALED ENDPOINTS
+# DON / SEALED LIVE PRICE ENDPOINTS
 # ------------------------------------------------------
 @app.get("/prices/dons")
 def get_dons_prices():
@@ -251,7 +251,7 @@ def refresh_collectr():
 
 
 # ------------------------------------------------------
-# HISTORY (UNCHANGED)
+# HISTORY — CARDS
 # ------------------------------------------------------
 @app.get("/history/{card_id}")
 def get_history(card_id: str, limit: int = 365):
@@ -275,7 +275,68 @@ def get_history(card_id: str, limit: int = 365):
     conn.close()
 
     return {
-        "card_id": cid,
+        "type": "card",
+        "id": cid,
+        "count": len(rows),
+        "history": [{"date": d, "eur": eur, "usd": usd} for d, eur, usd in rows],
+    }
+
+
+# ------------------------------------------------------
+# HISTORY — DON
+# ------------------------------------------------------
+@app.get("/history/don/{name}")
+def get_don_history(name: str, limit: int = 365):
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute(
+        """
+        SELECT date, eur_price, usd_price
+        FROM don_history
+        WHERE name = ?
+        ORDER BY date ASC
+        LIMIT ?
+        """,
+        (name, limit),
+    )
+
+    rows = cursor.fetchall()
+    conn.close()
+
+    return {
+        "type": "don",
+        "name": name,
+        "count": len(rows),
+        "history": [{"date": d, "eur": eur, "usd": usd} for d, eur, usd in rows],
+    }
+
+
+# ------------------------------------------------------
+# HISTORY — SEALED
+# ------------------------------------------------------
+@app.get("/history/sealed/{name}")
+def get_sealed_history(name: str, limit: int = 365):
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute(
+        """
+        SELECT date, eur_price, usd_price
+        FROM sealed_history
+        WHERE name = ?
+        ORDER BY date ASC
+        LIMIT ?
+        """,
+        (name, limit),
+    )
+
+    rows = cursor.fetchall()
+    conn.close()
+
+    return {
+        "type": "sealed",
+        "name": name,
         "count": len(rows),
         "history": [{"date": d, "eur": eur, "usd": usd} for d, eur, usd in rows],
     }
