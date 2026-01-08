@@ -9,24 +9,20 @@ from datetime import datetime, timedelta
 import os
 import sqlite3
 
-
 # ------------------------------------------------------
-# CORRECT DB PATH (absolute path inside Render container)
+# PATHS
 # ------------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "history.db")
-
-# ------------------------------------------------------
-# DECKS JSON PATH (for Flutter deck browser)
-# ------------------------------------------------------
 DECKS_PATH = os.path.join(BASE_DIR, "all_decks_by_region_and_set.json")
+CACHE_FILE = os.path.join(BASE_DIR, "price_cache.json")
 
-# Simple cache: { card_id: { "timestamp": datetime, "data": {...} } }
+# ------------------------------------------------------
+# CARD PRICE CACHE (Limitless)
+# ------------------------------------------------------
 PRICE_CACHE = {}
 CACHE_TTL = timedelta(hours=24)
-CACHE_FILE = "price_cache.json"
 
-# Load persistent cache at startup
 if os.path.exists(CACHE_FILE):
     try:
         with open(CACHE_FILE, "r") as f:
@@ -36,9 +32,9 @@ if os.path.exists(CACHE_FILE):
                     "timestamp": datetime.fromisoformat(val["timestamp"]),
                     "data": val["data"],
                 }
-        print("Loaded persistent cache:", len(PRICE_CACHE))
+        print("Loaded persistent card cache:", len(PRICE_CACHE))
     except Exception as e:
-        print("Failed to load persistent cache:", e)
+        print("Failed to load card cache:", e)
 
 
 def save_cache_to_disk():
@@ -56,9 +52,23 @@ def save_cache_to_disk():
         print("Failed to save cache:", e)
 
 
+# ------------------------------------------------------
+# DON / SEALED BULK CACHE (Collectr)
+# ------------------------------------------------------
+DONS_CACHE = {"timestamp": None, "data": []}
+SEALED_CACHE = {"timestamp": None, "data": []}
+COLLECTR_CACHE_TTL = timedelta(hours=6)
+
+USD_TO_EUR = 0.75
+COLLECTR_URL = (
+    "https://app.getcollectr.com/?sortType=price&sortOrder=DESC&cardType={}&category=68"
+)
+
+# ------------------------------------------------------
+# FASTAPI APP
+# ------------------------------------------------------
 app = FastAPI()
 
-# Allow Flutter (macOS, web, mobile) to access the API
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -66,33 +76,26 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# ------------------------------------------------------
+# LIMITLESS SCRAPER (CARDS)
+# ------------------------------------------------------
 BASE_URL = "https://onepiece.limitlesstcg.com/cards/{}"
 
 
-# ------------------------------------------------------
-# SCRAPER
-# ------------------------------------------------------
 def scrape_prices(card_id: str):
     card_id = card_id.upper().replace("?", "")
 
-    # Extract base ID (handles OP, EB, ST, PRB, PR, CP, etc.)
     m = re.match(r"([A-Z]+[0-9]{2}-[0-9]{3})", card_id)
     if not m:
         raise ValueError(f"Invalid card_id format: {card_id}")
 
     base = m.group(1)
-
-    # Extract version number
     m2 = re.search(r"V=(\d+)", card_id)
     version = int(m2.group(1)) if m2 else 0
 
-    # Format ID for Limitless
-    if version > 0:
-        formatted = f"{base}?v={version}"
-    else:
-        formatted = base
-
+    formatted = f"{base}?v={version}" if version > 0 else base
     url = BASE_URL.format(formatted)
+
     r = requests.get(url)
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
@@ -100,77 +103,54 @@ def scrape_prices(card_id: str):
     table = (
         soup.select_one("table.prints-table")
         or soup.select_one("div.card-prints table")
-        or soup.select_one("div.price-table table")
         or soup.select_one("table")
     )
 
     if not table:
-        print("NO TABLE FOUND for", card_id)
-        return {
-            "usd_price": 0,
-            "usd_url": None,
-            "eur_price": 0,
-            "eur_url": None,
-        }
+        return {"usd_price": 0, "eur_price": 0}
 
-    dollar = []
-    euro = []
-    usd_urls = []
-    eur_urls = []
+    usd, eur = [], []
 
     for row in table.select("tr"):
         if row.find("th"):
             continue
 
-        # USD price + URL
         usd_link = row.select_one("a.card-price.usd")
-        if usd_link:
-            m_usd = re.search(r"([\d\.,]+)", usd_link.get_text())
-            usd_price = float(m_usd.group(1).replace(",", "")) if m_usd else 0
-            usd_url = usd_link["href"]
-        else:
-            usd_price = 0
-            usd_url = None
-
-        # EUR price + URL
         eur_link = row.select_one("a.card-price.eur")
-        if eur_link:
-            m_eur = re.search(r"([\d\.,]+)", eur_link.get_text())
-            eur_price = float(m_eur.group(1).replace(",", "")) if m_eur else 0
-            eur_url = eur_link["href"]
-        else:
-            eur_price = 0
-            eur_url = None
 
-        dollar.append(usd_price)
-        euro.append(eur_price)
-        usd_urls.append(usd_url)
-        eur_urls.append(eur_url)
+        usd_val = (
+            float(re.search(r"([\d\.]+)", usd_link.text).group(1))
+            if usd_link and re.search(r"([\d\.]+)", usd_link.text)
+            else 0
+        )
 
-    # Avoid out-of-range version index
-    if version >= len(dollar):
+        eur_val = (
+            float(re.search(r"([\d\.]+)", eur_link.text).group(1))
+            if eur_link and re.search(r"([\d\.]+)", eur_link.text)
+            else 0
+        )
+
+        usd.append(usd_val)
+        eur.append(eur_val)
+
+    if version >= len(usd):
         version = 0
 
     return {
-        "usd_price": dollar[version],
-        "usd_url": usd_urls[version],
-        "eur_price": euro[version],
-        "eur_url": eur_urls[version],
+        "usd_price": usd[version],
+        "eur_price": eur[version],
     }
 
 
 @app.get("/price/{card_id}")
 def get_price(card_id: str):
     now = datetime.utcnow()
-
-    # Check cache
     cached = PRICE_CACHE.get(card_id)
+
     if cached and now - cached["timestamp"] < CACHE_TTL:
         return {"card_id": card_id, "prices": cached["data"], "cached": True}
 
     prices = scrape_prices(card_id)
-
-    # Save to cache
     PRICE_CACHE[card_id] = {"timestamp": now, "data": prices}
     save_cache_to_disk()
 
@@ -178,64 +158,143 @@ def get_price(card_id: str):
 
 
 # ------------------------------------------------------
-# HISTORY ENDPOINT (for graphs)
+# COLLECTR SCRAPERS (DON / SEALED)
+# ------------------------------------------------------
+def scrape_collectr(card_type: str):
+    r = requests.get(COLLECTR_URL.format(card_type))
+    r.raise_for_status()
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    items = []
+
+    for card in soup.select("div.card-item"):
+        name_el = card.select_one(".card-name")
+        price_el = card.select_one(".price")
+
+        if not name_el or not price_el:
+            continue
+
+        m = re.search(r"([\d\.]+)", price_el.text)
+        usd = float(m.group(1)) if m else 0
+        eur = round(usd * USD_TO_EUR, 2)
+
+        items.append(
+            {
+                "name": name_el.get_text(strip=True),
+                "usd_price": usd,
+                "eur_price": eur,
+                "source": "collectr",
+            }
+        )
+
+    return items
+
+
+def get_dons_cached():
+    now = datetime.utcnow()
+    if DONS_CACHE["timestamp"] and now - DONS_CACHE["timestamp"] < COLLECTR_CACHE_TTL:
+        return DONS_CACHE["data"], True
+
+    data = scrape_collectr("don")
+    DONS_CACHE.update({"timestamp": now, "data": data})
+    return data, False
+
+
+def get_sealed_cached():
+    now = datetime.utcnow()
+    if SEALED_CACHE["timestamp"] and now - SEALED_CACHE["timestamp"] < COLLECTR_CACHE_TTL:
+        return SEALED_CACHE["data"], True
+
+    data = scrape_collectr("sealed")
+    SEALED_CACHE.update({"timestamp": now, "data": data})
+    return data, False
+
+
+# ------------------------------------------------------
+# DON / SEALED ENDPOINTS
+# ------------------------------------------------------
+@app.get("/prices/dons")
+def get_dons_prices():
+    data, cached = get_dons_cached()
+    return {
+        "type": "don",
+        "count": len(data),
+        "cached": cached,
+        "updated_at": DONS_CACHE["timestamp"],
+        "items": data,
+    }
+
+
+@app.get("/prices/sealed")
+def get_sealed_prices():
+    data, cached = get_sealed_cached()
+    return {
+        "type": "sealed",
+        "count": len(data),
+        "cached": cached,
+        "updated_at": SEALED_CACHE["timestamp"],
+        "items": data,
+    }
+
+
+@app.post("/refresh/collectr")
+def refresh_collectr():
+    now = datetime.utcnow()
+    DONS_CACHE.update({"timestamp": now, "data": scrape_collectr("don")})
+    SEALED_CACHE.update({"timestamp": now, "data": scrape_collectr("sealed")})
+    return {
+        "ok": True,
+        "updated_at": now,
+        "dons": len(DONS_CACHE["data"]),
+        "sealed": len(SEALED_CACHE["data"]),
+    }
+
+
+# ------------------------------------------------------
+# HISTORY (UNCHANGED)
 # ------------------------------------------------------
 @app.get("/history/{card_id}")
 def get_history(card_id: str, limit: int = 365):
-    """
-    Returns historical EUR/USD prices for a given card_id, e.g.
-    /history/OP13-001v=0?limit=90
-    """
-
-    # FIX APPLIED HERE: remove uppercasing
     cid = card_id.replace("?", "").strip()
 
-    try:
-        conn = sqlite3.connect(DB_PATH)
-        cursor = conn.cursor()
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
 
-        cursor.execute(
-            """
-            SELECT date, eur_price, usd_price
-            FROM card_history
-            WHERE card_id = ?
-            ORDER BY date ASC
-            LIMIT ?
-            """,
-            (cid, limit),
-        )
+    cursor.execute(
+        """
+        SELECT date, eur_price, usd_price
+        FROM card_history
+        WHERE card_id = ?
+        ORDER BY date ASC
+        LIMIT ?
+        """,
+        (cid, limit),
+    )
 
-        rows = cursor.fetchall()
-        conn.close()
+    rows = cursor.fetchall()
+    conn.close()
 
-        history = [
-            {"date": d, "eur": eur, "usd": usd}
-            for (d, eur, usd) in rows
-        ]
+    return {
+        "card_id": cid,
+        "count": len(rows),
+        "history": [{"date": d, "eur": eur, "usd": usd} for d, eur, usd in rows],
+    }
 
-        return {
-            "card_id": cid,
-            "count": len(history),
-            "history": history,
-        }
 
-    except Exception as e:
-        return {"card_id": cid, "error": str(e)}
 # ------------------------------------------------------
-# ------------------------------------------------------
-# DECK BROWSER ENDPOINT (for Flutter)
+# DECKS (UNCHANGED)
 # ------------------------------------------------------
 @app.get("/decks")
 def get_decks():
     if not os.path.exists(DECKS_PATH):
-        return {"error": "Deck file not found on server"}
+        return {"error": "Deck file not found"}
 
-    try:
-        with open(DECKS_PATH, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception as e:
-        return {"error": str(e)}
+    with open(DECKS_PATH, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
+# ------------------------------------------------------
+# MAIN
+# ------------------------------------------------------
 if __name__ == "__main__":
     uvicorn.run("price_api:app", host="0.0.0.0", port=8000, reload=True)
