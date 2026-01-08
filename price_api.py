@@ -77,26 +77,64 @@ app.add_middleware(
 )
 
 # ------------------------------------------------------
+# HELPERS
+# ------------------------------------------------------
+def parse_price(text: str) -> float:
+    """
+    Robust number parser for prices like:
+      "$2,980.66"
+      "€2,980.66"
+      "2,980.66"
+      "2.980,66" (EU format)
+      "2980.66"
+    """
+    if not text:
+        return 0.0
+
+    # Keep only digits, commas, dots
+    m = re.search(r"([\d\.,]+)", text.replace("\u00a0", " ").strip())
+    if not m:
+        return 0.0
+
+    s = m.group(1)
+
+    # If it has both ',' and '.', assume ',' is thousands separator:
+    # "2,980.66" -> "2980.66"
+    if "," in s and "." in s:
+        s = s.replace(",", "")
+    # If it has ',' but no '.', assume EU decimal comma:
+    # "2.980,66" won't match perfectly here unless included, but for "2980,66":
+    # -> "2980.66"
+    elif "," in s and "." not in s:
+        s = s.replace(",", ".")
+
+    try:
+        return float(s)
+    except Exception:
+        return 0.0
+
+
+# ------------------------------------------------------
 # LIMITLESS SCRAPER (CARDS)
 # ------------------------------------------------------
 BASE_URL = "https://onepiece.limitlesstcg.com/cards/{}"
 
 
 def scrape_prices(card_id: str):
-    card_id = card_id.upper().replace("?", "")
+    card_id = card_id.upper().replace("?", "").strip()
 
     m = re.match(r"([A-Z]+[0-9]{2}-[0-9]{3})", card_id)
     if not m:
         raise ValueError(f"Invalid card_id format: {card_id}")
 
     base = m.group(1)
-    m2 = re.search(r"V=(\d+)", card_id)
+    m2 = re.search(r"V=(\d+)", card_id)  # works with OP13-120V=3 after upper()
     version = int(m2.group(1)) if m2 else 0
 
     formatted = f"{base}?v={version}" if version > 0 else base
     url = BASE_URL.format(formatted)
 
-    r = requests.get(url)
+    r = requests.get(url, timeout=20)
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
 
@@ -107,7 +145,7 @@ def scrape_prices(card_id: str):
     )
 
     if not table:
-        return {"usd_price": 0, "eur_price": 0}
+        return {"usd_price": 0.0, "eur_price": 0.0}
 
     usd, eur = [], []
 
@@ -118,17 +156,8 @@ def scrape_prices(card_id: str):
         usd_link = row.select_one("a.card-price.usd")
         eur_link = row.select_one("a.card-price.eur")
 
-        usd_val = (
-            float(re.search(r"([\d\.]+)", usd_link.text).group(1))
-            if usd_link and re.search(r"([\d\.]+)", usd_link.text)
-            else 0
-        )
-
-        eur_val = (
-            float(re.search(r"([\d\.]+)", eur_link.text).group(1))
-            if eur_link and re.search(r"([\d\.]+)", eur_link.text)
-            else 0
-        )
+        usd_val = parse_price(usd_link.get_text(strip=True)) if usd_link else 0.0
+        eur_val = parse_price(eur_link.get_text(strip=True)) if eur_link else 0.0
 
         usd.append(usd_val)
         eur.append(eur_val)
@@ -137,8 +166,8 @@ def scrape_prices(card_id: str):
         version = 0
 
     return {
-        "usd_price": usd[version],
-        "eur_price": eur[version],
+        "usd_price": float(usd[version]),
+        "eur_price": float(eur[version]),
     }
 
 
@@ -161,7 +190,7 @@ def get_price(card_id: str):
 # COLLECTR SCRAPERS (DON / SEALED)
 # ------------------------------------------------------
 def scrape_collectr(card_type: str):
-    r = requests.get(COLLECTR_URL.format(card_type))
+    r = requests.get(COLLECTR_URL.format(card_type), timeout=20)
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
 
@@ -174,15 +203,14 @@ def scrape_collectr(card_type: str):
         if not name_el or not price_el:
             continue
 
-        m = re.search(r"([\d\.]+)", price_el.text)
-        usd = float(m.group(1)) if m else 0
+        usd = parse_price(price_el.get_text(strip=True))
         eur = round(usd * USD_TO_EUR, 2)
 
         items.append(
             {
                 "name": name_el.get_text(strip=True),
-                "usd_price": usd,
-                "eur_price": eur,
+                "usd_price": float(usd),
+                "eur_price": float(eur),
                 "source": "collectr",
             }
         )
