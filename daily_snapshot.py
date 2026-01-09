@@ -1,15 +1,19 @@
 import os
 import re
+import json
 import sqlite3
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+import time
+from requests.exceptions import RequestException
 
 # ------------------------------------------------------
 # PATHS
 # ------------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "history.db")
+ALL_CARDS_PATH = os.path.join(BASE_DIR, "all_cards.json")
 
 # ------------------------------------------------------
 # CONSTANTS
@@ -17,8 +21,11 @@ DB_PATH = os.path.join(BASE_DIR, "history.db")
 LIMITLESS_BASE = "https://onepiece.limitlesstcg.com/cards/{}"
 COLLECTR_URL = "https://app.getcollectr.com/?sortType=price&sortOrder=DESC&cardType={}&category=68"
 USD_TO_EUR = 0.75
-
 TODAY = datetime.utcnow().date().isoformat()
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; OPTCGSnapshot/1.0)"
+}
 
 # ------------------------------------------------------
 # DB SETUP
@@ -63,23 +70,27 @@ def init_db():
 # ------------------------------------------------------
 # HELPERS
 # ------------------------------------------------------
-def normalize_card_id(card_id: str) -> str:
+def load_all_base_codes():
     """
-    IMPORTANT RULE:
-    - v=0 → NO SUFFIX (OP13-001)
-    - v>=1 → OP13-001v=1
+    Load all base card codes from all_cards.json
+    (NO versions, NO duplicates)
     """
-    cid = card_id.upper().replace("?", "").strip()
-    return cid
+    with open(ALL_CARDS_PATH, "r", encoding="utf-8") as f:
+        cards = json.load(f)
+
+    base_codes = set()
+    for c in cards:
+        code = c.get("code")
+        if code and re.match(r"[A-Z]{2,4}\d{2}-\d{3}", code):
+            base_codes.add(code)
+
+    print(f"✔ Loaded {len(base_codes)} unique base card codes")
+    return sorted(base_codes)
 
 
 def extract_versions(card_code: str):
-    """
-    Returns list of card_ids to snapshot:
-    ['OP13-001', 'OP13-001v=1', 'OP13-001v=2', ...]
-    """
     url = LIMITLESS_BASE.format(card_code)
-    r = requests.get(url)
+    r = requests.get(url, headers=HEADERS, timeout=15)
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
 
@@ -93,30 +104,28 @@ def extract_versions(card_code: str):
         return []
 
     versions = []
-    for idx, row in enumerate(table.select("tr")):
+    idx = 0
+    for row in table.select("tr"):
         if row.find("th"):
             continue
         if idx == 0:
-            versions.append(card_code)  # v=0 → NO SUFFIX
+            versions.append(card_code)
         else:
             versions.append(f"{card_code}v={idx}")
+        idx += 1
 
     return versions
 
 
-# ------------------------------------------------------
-# LIMITLESS PRICE SCRAPER
-# ------------------------------------------------------
 def scrape_card_price(card_id: str):
     base = re.match(r"([A-Z]+[0-9]{2}-[0-9]{3})", card_id).group(1)
-
     m = re.search(r"v=(\d+)", card_id)
     version = int(m.group(1)) if m else 0
 
     formatted = f"{base}?v={version}" if version > 0 else base
     url = LIMITLESS_BASE.format(formatted)
 
-    r = requests.get(url)
+    r = requests.get(url, headers=HEADERS, timeout=15)
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
 
@@ -130,7 +139,6 @@ def scrape_card_price(card_id: str):
         return 0.0, 0.0
 
     usd, eur = [], []
-
     for row in table.select("tr"):
         if row.find("th"):
             continue
@@ -150,27 +158,16 @@ def scrape_card_price(card_id: str):
     return eur[version], usd[version]
 
 # ------------------------------------------------------
-# COLLECTR SCRAPER
+# COLLECTR SCRAPER (SAFE)
 # ------------------------------------------------------
-import time
-from requests.exceptions import RequestException
-
-def scrape_collectr(card_type: str, retries: int = 3, timeout: int = 15):
+def scrape_collectr(card_type: str, retries=3):
     url = COLLECTR_URL.format(card_type)
 
-    for attempt in range(1, retries + 1):
+    for attempt in range(retries):
         try:
-            r = requests.get(
-                url,
-                timeout=timeout,
-                headers={
-                    "User-Agent": "Mozilla/5.0 (compatible; OPTCGSnapshot/1.0)"
-                },
-            )
-
-            # If Collectr is up but slow, this still may be HTML error page
+            r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code != 200:
-                raise RequestException(f"HTTP {r.status_code}")
+                raise RequestException(r.status_code)
 
             soup = BeautifulSoup(r.text, "html.parser")
             items = []
@@ -178,7 +175,6 @@ def scrape_collectr(card_type: str, retries: int = 3, timeout: int = 15):
             for card in soup.select("div.card-item"):
                 name_el = card.select_one(".card-name")
                 price_el = card.select_one(".price")
-
                 if not name_el or not price_el:
                     continue
 
@@ -188,93 +184,59 @@ def scrape_collectr(card_type: str, retries: int = 3, timeout: int = 15):
 
                 usd = float(m.group(1))
                 eur = round(usd * USD_TO_EUR, 2)
-
                 items.append((name_el.get_text(strip=True), eur, usd))
 
             print(f"✔ Collectr {card_type}: {len(items)} items")
             return items
 
         except Exception as e:
-            print(
-                f"⚠ Collectr {card_type} attempt {attempt}/{retries} failed: {e}"
-            )
+            print(f"⚠ Collectr {card_type} attempt {attempt+1} failed: {e}")
             time.sleep(3)
 
-    # HARD FAIL PROTECTION
-    print(f"❌ Collectr {card_type} unavailable — skipping snapshot")
+    print(f"❌ Collectr {card_type} skipped")
     return []
 
 # ------------------------------------------------------
-# SNAPSHOT RECORDERS
-# ------------------------------------------------------
-def record_cards(cursor, card_codes):
-    for code in card_codes:
-        versions = extract_versions(code)
-
-        for cid in versions:
-            cid = normalize_card_id(cid)
-            eur, usd = scrape_card_price(cid)
-
-            cursor.execute(
-                """
-                INSERT OR IGNORE INTO card_history
-                (card_id, date, eur_price, usd_price)
-                VALUES (?, ?, ?, ?)
-                """,
-                (cid, TODAY, eur, usd),
-            )
-
-
-def record_sealed(cursor):
-    for name, eur, usd in scrape_collectr("sealed"):
-        cursor.execute(
-            """
-            INSERT OR IGNORE INTO sealed_history
-            (name, date, eur_price, usd_price)
-            VALUES (?, ?, ?, ?)
-            """,
-            (name, TODAY, eur, usd),
-        )
-
-
-def record_dons(cursor):
-    for name, eur, usd in scrape_collectr("don"):
-        cursor.execute(
-            """
-            INSERT OR IGNORE INTO don_history
-            (name, date, eur_price, usd_price)
-            VALUES (?, ?, ?, ?)
-            """,
-            (name, TODAY, eur, usd),
-        )
-
-# ------------------------------------------------------
-# MAIN
+# SNAPSHOT
 # ------------------------------------------------------
 def main():
     init_db()
-
-    # EXAMPLE: load your card list from file or elsewhere
-    # This MUST be base codes ONLY (NO v=)
-    card_codes = [
-        "OP13-001",
-        "OP13-002",
-        "OP05-041",
-        # ...
-    ]
+    card_codes = load_all_base_codes()
 
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
-    record_cards(cursor, card_codes)
-    record_sealed(cursor)
-    record_dons(cursor)
+    for code in card_codes:
+        try:
+            versions = extract_versions(code)
+            for cid in versions:
+                eur, usd = scrape_card_price(cid)
+                cursor.execute(
+                    """
+                    INSERT OR IGNORE INTO card_history
+                    (card_id, date, eur_price, usd_price)
+                    VALUES (?, ?, ?, ?)
+                    """,
+                    (cid, TODAY, eur, usd),
+                )
+        except Exception as e:
+            print(f"⚠ Failed {code}: {e}")
+
+    for name, eur, usd in scrape_collectr("sealed"):
+        cursor.execute(
+            "INSERT OR IGNORE INTO sealed_history VALUES (?, ?, ?, ?)",
+            (name, TODAY, eur, usd),
+        )
+
+    for name, eur, usd in scrape_collectr("don"):
+        cursor.execute(
+            "INSERT OR IGNORE INTO don_history VALUES (?, ?, ?, ?)",
+            (name, TODAY, eur, usd),
+        )
 
     conn.commit()
     conn.close()
-
-    print("Daily snapshot completed:", TODAY)
-
+    print("✅ FULL daily snapshot completed:", TODAY)
 
 if __name__ == "__main__":
     main()
