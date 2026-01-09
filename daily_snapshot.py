@@ -152,26 +152,57 @@ def scrape_card_price(card_id: str):
 # ------------------------------------------------------
 # COLLECTR SCRAPER
 # ------------------------------------------------------
-def scrape_collectr(card_type: str):
-    r = requests.get(COLLECTR_URL.format(card_type))
-    r.raise_for_status()
-    soup = BeautifulSoup(r.text, "html.parser")
+import time
+from requests.exceptions import RequestException
 
-    items = []
+def scrape_collectr(card_type: str, retries: int = 3, timeout: int = 15):
+    url = COLLECTR_URL.format(card_type)
 
-    for card in soup.select("div.card-item"):
-        name_el = card.select_one(".card-name")
-        price_el = card.select_one(".price")
+    for attempt in range(1, retries + 1):
+        try:
+            r = requests.get(
+                url,
+                timeout=timeout,
+                headers={
+                    "User-Agent": "Mozilla/5.0 (compatible; OPTCGSnapshot/1.0)"
+                },
+            )
 
-        if not name_el or not price_el:
-            continue
+            # If Collectr is up but slow, this still may be HTML error page
+            if r.status_code != 200:
+                raise RequestException(f"HTTP {r.status_code}")
 
-        usd = float(re.search(r"([\d\.]+)", price_el.text).group(1))
-        eur = round(usd * USD_TO_EUR, 2)
+            soup = BeautifulSoup(r.text, "html.parser")
+            items = []
 
-        items.append((name_el.get_text(strip=True), eur, usd))
+            for card in soup.select("div.card-item"):
+                name_el = card.select_one(".card-name")
+                price_el = card.select_one(".price")
 
-    return items
+                if not name_el or not price_el:
+                    continue
+
+                m = re.search(r"([\d\.]+)", price_el.text)
+                if not m:
+                    continue
+
+                usd = float(m.group(1))
+                eur = round(usd * USD_TO_EUR, 2)
+
+                items.append((name_el.get_text(strip=True), eur, usd))
+
+            print(f"✔ Collectr {card_type}: {len(items)} items")
+            return items
+
+        except Exception as e:
+            print(
+                f"⚠ Collectr {card_type} attempt {attempt}/{retries} failed: {e}"
+            )
+            time.sleep(3)
+
+    # HARD FAIL PROTECTION
+    print(f"❌ Collectr {card_type} unavailable — skipping snapshot")
+    return []
 
 # ------------------------------------------------------
 # SNAPSHOT RECORDERS
