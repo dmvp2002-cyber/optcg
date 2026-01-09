@@ -102,9 +102,8 @@ def parse_price(text: str) -> float:
     # "2,980.66" -> "2980.66"
     if "," in s and "." in s:
         s = s.replace(",", "")
-    # If it has ',' but no '.', assume EU decimal comma:
-    # "2.980,66" won't match perfectly here unless included, but for "2980,66":
-    # -> "2980.66"
+    # If it has ',' but no '.', assume decimal comma:
+    # "2980,66" -> "2980.66"
     elif "," in s and "." not in s:
         s = s.replace(",", ".")
 
@@ -121,6 +120,11 @@ BASE_URL = "https://onepiece.limitlesstcg.com/cards/{}"
 
 
 def scrape_prices(card_id: str):
+    """
+    Returns price + marketplace links for the requested card_id/version.
+    Output keys (kept stable for Flutter):
+      usd_price, eur_price, usd_url, eur_url
+    """
     card_id = card_id.upper().replace("?", "").strip()
 
     m = re.match(r"([A-Z]+[0-9]{2}-[0-9]{3})", card_id)
@@ -128,7 +132,9 @@ def scrape_prices(card_id: str):
         raise ValueError(f"Invalid card_id format: {card_id}")
 
     base = m.group(1)
-    m2 = re.search(r"V=(\d+)", card_id)  # works with OP13-120V=3 after upper()
+
+    # Extract version number from ...V=3 or ...v=3
+    m2 = re.search(r"V=(\d+)", card_id)
     version = int(m2.group(1)) if m2 else 0
 
     formatted = f"{base}?v={version}" if version > 0 else base
@@ -141,13 +147,17 @@ def scrape_prices(card_id: str):
     table = (
         soup.select_one("table.prints-table")
         or soup.select_one("div.card-prints table")
+        or soup.select_one("div.price-table table")
         or soup.select_one("table")
     )
 
     if not table:
-        return {"usd_price": 0.0, "eur_price": 0.0}
+        return {"usd_price": 0.0, "eur_price": 0.0, "usd_url": None, "eur_url": None}
 
-    usd, eur = [], []
+    usd_prices = []
+    eur_prices = []
+    usd_urls = []
+    eur_urls = []
 
     for row in table.select("tr"):
         if row.find("th"):
@@ -156,18 +166,29 @@ def scrape_prices(card_id: str):
         usd_link = row.select_one("a.card-price.usd")
         eur_link = row.select_one("a.card-price.eur")
 
-        usd_val = parse_price(usd_link.get_text(strip=True)) if usd_link else 0.0
-        eur_val = parse_price(eur_link.get_text(strip=True)) if eur_link else 0.0
+        usd_val = parse_price(usd_link.get_text(" ", strip=True)) if usd_link else 0.0
+        eur_val = parse_price(eur_link.get_text(" ", strip=True)) if eur_link else 0.0
 
-        usd.append(usd_val)
-        eur.append(eur_val)
+        usd_url = usd_link.get("href") if usd_link else None
+        eur_url = eur_link.get("href") if eur_link else None
 
-    if version >= len(usd):
+        usd_prices.append(float(usd_val))
+        eur_prices.append(float(eur_val))
+        usd_urls.append(usd_url)
+        eur_urls.append(eur_url)
+
+    # safety
+    if not usd_prices:
+        return {"usd_price": 0.0, "eur_price": 0.0, "usd_url": None, "eur_url": None}
+
+    if version >= len(usd_prices):
         version = 0
 
     return {
-        "usd_price": float(usd[version]),
-        "eur_price": float(eur[version]),
+        "usd_price": float(usd_prices[version]),
+        "eur_price": float(eur_prices[version]),
+        "usd_url": usd_urls[version],
+        "eur_url": eur_urls[version],
     }
 
 
@@ -180,6 +201,7 @@ def get_price(card_id: str):
         return {"card_id": card_id, "prices": cached["data"], "cached": True}
 
     prices = scrape_prices(card_id)
+
     PRICE_CACHE[card_id] = {"timestamp": now, "data": prices}
     save_cache_to_disk()
 
