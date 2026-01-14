@@ -2,7 +2,7 @@ name: Daily Price Snapshot
 
 on:
   schedule:
-    - cron: "0 0 * * *"     # Runs daily at 00:00 UTC
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
@@ -29,6 +29,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # 🔥 REQUIRED FOR PLAYWRIGHT
+      - name: Install Playwright browsers
+        run: |
+          playwright install chromium
+
       # --------------------------------------
       # SCRAPE COLLECTR (CURRENT PRICES)
       # --------------------------------------
@@ -45,10 +50,10 @@ jobs:
       # --------------------------------------
       - name: Run daily snapshot
         run: |
-          python3 daily_snapshot.py
+          python daily_snapshot.py
 
       # --------------------------------------
-      # FORCE RENDER TO REBUILD (dummy file)
+      # FORCE RENDER TO REBUILD
       # --------------------------------------
       - name: Touch trigger file for Render
         run: |
@@ -63,6 +68,5 @@ jobs:
           git config --local user.email "actions@github.com"
 
           git add history.db data/sealed_collectr.json data/dons_collectr.json render_trigger.txt
-
           git diff --cached --quiet || git commit -m "Daily snapshot update $(date -u +"%Y-%m-%d")"
           git push
