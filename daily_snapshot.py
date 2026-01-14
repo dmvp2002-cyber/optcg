@@ -70,6 +70,19 @@ def init_db():
 # ------------------------------------------------------
 # HELPERS
 # ------------------------------------------------------
+def normalize_name(name: str) -> str:
+    """
+    Normalize Collectr keys:
+    - sealed::NAME → NAME
+    - don::NAME → NAME
+    """
+    if not name:
+        return name
+    if "::" in name:
+        return name.split("::", 1)[1].strip()
+    return name.strip()
+
+
 def parse_price(text: str) -> float:
     if not text:
         return 0.0
@@ -176,7 +189,7 @@ def scrape_card_price(card_id: str):
 
 
 # ------------------------------------------------------
-# COLLECTR — LOAD STATIC SNAPSHOT (ROBUST)
+# COLLECTR — LOAD STATIC SNAPSHOT (PATCHED)
 # ------------------------------------------------------
 def load_collectr_snapshot(path):
     if not os.path.exists(path):
@@ -188,28 +201,29 @@ def load_collectr_snapshot(path):
 
     rows = []
 
-    # Case 1: dict { name -> price dict }
+    # Case 1: dict { "sealed::NAME" → {...} }
     if isinstance(data, dict):
-        for name, prices in data.items():
+        for raw_name, prices in data.items():
+            name = normalize_name(raw_name)
+
             if isinstance(prices, dict):
-                eur = prices.get("price_eur") or prices.get("eur_price") or 0
-                usd = prices.get("price_usd") or prices.get("usd_price") or 0
+                eur = prices.get("price_eur") or prices.get("eur_price") or prices.get("eur") or 0
+                usd = prices.get("price_usd") or prices.get("usd_price") or prices.get("usd") or 0
             else:
                 eur = usd = 0
 
             rows.append((name, float(eur), float(usd)))
+
         return rows
 
-    # Case 2: list (mixed safe)
+    # Case 2: list of dicts
     for it in data:
         if isinstance(it, dict):
-            name = it.get("name")
-            eur = it.get("price_eur") or it.get("eur_price") or 0
-            usd = it.get("price_usd") or it.get("usd_price") or 0
+            raw_name = it.get("name")
+            name = normalize_name(raw_name)
 
-        elif isinstance(it, str):
-            name = it
-            eur = usd = 0
+            eur = it.get("price_eur") or it.get("eur_price") or it.get("eur") or 0
+            usd = it.get("price_usd") or it.get("usd_price") or it.get("usd") or 0
 
         else:
             continue
