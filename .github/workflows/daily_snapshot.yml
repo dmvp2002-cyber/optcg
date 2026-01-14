@@ -13,18 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # --------------------------------------
-      # CHECKOUT REPO
-      # --------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: true
 
-      # --------------------------------------
-      # PYTHON SETUP
-      # --------------------------------------
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -36,7 +30,18 @@ jobs:
           pip install -r requirements.txt
 
       # --------------------------------------
-      # RUN DAILY SNAPSHOT
+      # SCRAPE COLLECTR (CURRENT PRICES)
+      # --------------------------------------
+      - name: Scrape Collectr sealed prices
+        run: |
+          python scripts/scrape_collectr_sealed.py
+
+      - name: Scrape Collectr DON prices
+        run: |
+          python scripts/scrape_collectr_dons.py
+
+      # --------------------------------------
+      # RUN DAILY SNAPSHOT (HISTORY)
       # --------------------------------------
       - name: Run daily snapshot
         run: |
@@ -52,14 +57,12 @@ jobs:
       # --------------------------------------
       # COMMIT & PUSH
       # --------------------------------------
-      - name: Commit & push updated history.db
+      - name: Commit & push updated data
         run: |
           git config --local user.name "GitHub Actions"
           git config --local user.email "actions@github.com"
 
-          git add history.db render_trigger.txt
+          git add history.db data/sealed_collectr.json data/dons_collectr.json render_trigger.txt
 
-          # Only commit if there are changes
           git diff --cached --quiet || git commit -m "Daily snapshot update $(date -u +"%Y-%m-%d")"
-
           git push
