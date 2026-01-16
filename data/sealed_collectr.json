@@ -2104,5 +2104,17 @@
     "eur": 0.89,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655958.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
+  },
+  "sealed::The Azure Sea's Seven Sleeved Booster Pack": {
+    "usd": 0.0,
+    "eur": 0.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_666576.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Judge Pack Vol. 7": {
+    "usd": 0.0,
+    "eur": 0.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_668191.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
   }
 }
