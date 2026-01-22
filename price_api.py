@@ -175,7 +175,7 @@ def load_collectr_items(path: str, prefix: str):
                 "usd_price": float(usd),
                 "eur_price": float(eur),
                 "image_url": it.get("image_url"),
-                "source": it.get("source", "collectr"),
+                "source": v.get("source", "collectr") if isinstance(raw, dict) else it.get("source", "collectr"),
             })
 
     return items
@@ -271,13 +271,26 @@ def _db_price_at_or_before(card_id: str, cutoff: str):
         cur.execute(q, (card_id, cutoff))
         return cur.fetchone()
 
+def _db_oldest_price(card_id: str):
+    q = """
+        SELECT eur_price, usd_price
+        FROM card_history
+        WHERE card_id = ?
+        ORDER BY date ASC
+        LIMIT 1
+    """
+    with db_connect() as conn:
+        cur = conn.cursor()
+        cur.execute(q, (card_id,))
+        return cur.fetchone()
+
 def _pct(new: float, old: float) -> float:
     if old is None or old <= 0:
         return 0.0
     return ((new - old) / old) * 100.0
 
 # ------------------------------------------------------
-# PRICE ENDPOINT (ONLY ADDITIVE CHANGE)
+# PRICE ENDPOINT (ADDITIVE MULTI-WINDOW %)
 # ------------------------------------------------------
 @app.get("/price/{card_id}")
 def get_price(card_id: str, v: Optional[int] = None):
@@ -294,11 +307,51 @@ def get_price(card_id: str, v: Optional[int] = None):
     prices = scrape_prices(base, version)
 
     history_id = f"{base}v={version}" if version > 0 else base
-    cutoff = (datetime.utcnow() - timedelta(days=7)).isoformat()
-    old = _db_price_at_or_before(history_id, cutoff)
+    now = datetime.utcnow()
 
-    prices["pct_7d"] = round(_pct(prices["eur_price"], old[0]) if old else 0.0, 2)
-    prices["pct_7d_usd"] = round(_pct(prices["usd_price"], old[1]) if old else 0.0, 2)
+    eur_now = float(prices.get("eur_price") or 0.0)
+    usd_now = float(prices.get("usd_price") or 0.0)
+
+    def pct_at_days(days: int):
+        cutoff = (now - timedelta(days=days)).isoformat()
+        row = _db_price_at_or_before(history_id, cutoff)
+        if not row:
+            return 0.0, 0.0
+        old_eur, old_usd = row
+        return (
+            round(_pct(eur_now, old_eur), 2),
+            round(_pct(usd_now, old_usd), 2),
+        )
+
+    # 1D / 7D / 1M / 3M / 6M
+    pct_1d, pct_1d_usd = pct_at_days(1)
+    pct_7d, pct_7d_usd = pct_at_days(7)
+    pct_1m, pct_1m_usd = pct_at_days(30)
+    pct_3m, pct_3m_usd = pct_at_days(90)
+    pct_6m, pct_6m_usd = pct_at_days(180)
+
+    # MAX
+    oldest = _db_oldest_price(history_id)
+    if oldest:
+        old_eur, old_usd = oldest
+        pct_max = round(_pct(eur_now, old_eur), 2)
+        pct_max_usd = round(_pct(usd_now, old_usd), 2)
+    else:
+        pct_max, pct_max_usd = 0.0, 0.0
+
+    # Keep existing fields + add new ones
+    prices["pct_1d"] = pct_1d
+    prices["pct_1d_usd"] = pct_1d_usd
+    prices["pct_7d"] = pct_7d
+    prices["pct_7d_usd"] = pct_7d_usd
+    prices["pct_1m"] = pct_1m
+    prices["pct_1m_usd"] = pct_1m_usd
+    prices["pct_3m"] = pct_3m
+    prices["pct_3m_usd"] = pct_3m_usd
+    prices["pct_6m"] = pct_6m
+    prices["pct_6m_usd"] = pct_6m_usd
+    prices["pct_max"] = pct_max
+    prices["pct_max_usd"] = pct_max_usd
 
     PRICE_CACHE.set(cache_key, prices)
     return {"card_id": cache_key, "prices": prices, "cached": False}
