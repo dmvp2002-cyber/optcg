@@ -66,7 +66,10 @@ jobs:
         run: |
           git config --local user.name "GitHub Actions"
           git config --local user.email "actions@github.com"
-
+      
           git add history.db data/sealed_collectr.json data/dons_collectr.json render_trigger.txt
           git diff --cached --quiet || git commit -m "Daily snapshot update $(date -u +"%Y-%m-%d")"
-          git push
+      
+          # 🔑 FIX: always rebase before pushing
+          git pull --rebase origin main
+          git push origin main
