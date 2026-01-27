@@ -13,6 +13,10 @@ from bs4 import BeautifulSoup
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+# >>> RATE LIMIT ADDITION
+from fastapi import Request, HTTPException
+# <<< RATE LIMIT ADDITION
+
 # ------------------------------------------------------
 # PATHS
 # ------------------------------------------------------
@@ -93,6 +97,31 @@ class TTLCacheLRU:
 
 PRICE_CACHE = TTLCacheLRU(maxsize=600, ttl_seconds=24 * 3600)
 FILE_JSON_CACHE = TTLCacheLRU(maxsize=12, ttl_seconds=10 * 60)
+
+# >>> RATE LIMIT ADDITION
+# ------------------------------------------------------
+# SIMPLE IP RATE LIMITER (PER SECOND)
+# ------------------------------------------------------
+class RateLimiter:
+    def __init__(self, max_per_sec: int = 5):
+        self.max_per_sec = max_per_sec
+        self._lock = threading.Lock()
+        self._hits: Dict[str, list[float]] = {}
+
+    def allow(self, key: str) -> bool:
+        now = time.time()
+        with self._lock:
+            bucket = self._hits.setdefault(key, [])
+            while bucket and now - bucket[0] > 1.0:
+                bucket.pop(0)
+            if len(bucket) >= self.max_per_sec:
+                return False
+            bucket.append(now)
+            return True
+
+
+PRICE_RATE_LIMITER = RateLimiter(max_per_sec=5)
+# <<< RATE LIMIT ADDITION
 
 # ------------------------------------------------------
 # HELPERS (UNCHANGED)
@@ -252,7 +281,7 @@ def scrape_prices(base_id: str, version: int) -> Dict[str, Any]:
     }
 
 # ------------------------------------------------------
-# SQLITE HELPERS (ADDITIVE)
+# SQLITE HELPERS (UNCHANGED)
 # ------------------------------------------------------
 def db_connect() -> sqlite3.Connection:
     return sqlite3.connect(DB_PATH)
@@ -290,10 +319,10 @@ def _pct(new: float, old: float) -> float:
     return ((new - old) / old) * 100.0
 
 # ------------------------------------------------------
-# PRICE ENDPOINT (ADDITIVE MULTI-WINDOW %)
+# PRICE ENDPOINT (MINIMALLY PATCHED)
 # ------------------------------------------------------
 @app.get("/price/{card_id}")
-def get_price(card_id: str, v: Optional[int] = None):
+def get_price(card_id: str, request: Request, v: Optional[int] = None):
     try:
         base, version = normalize_card_and_version(card_id, v)
     except ValueError as e:
@@ -303,6 +332,12 @@ def get_price(card_id: str, v: Optional[int] = None):
     cached = PRICE_CACHE.get(cache_key)
     if cached is not None:
         return {"card_id": cache_key, "prices": cached, "cached": True}
+
+    # >>> RATE LIMIT ADDITION
+    client_ip = request.client.host if request.client else "unknown"
+    if not PRICE_RATE_LIMITER.allow(client_ip):
+        raise HTTPException(status_code=429, detail="Too many price requests")
+    # <<< RATE LIMIT ADDITION
 
     prices = scrape_prices(base, version)
 
@@ -339,7 +374,6 @@ def get_price(card_id: str, v: Optional[int] = None):
     else:
         pct_max, pct_max_usd = 0.0, 0.0
 
-    # Keep existing fields + add new ones
     prices["pct_1d"] = pct_1d
     prices["pct_1d_usd"] = pct_1d_usd
     prices["pct_7d"] = pct_7d
@@ -357,7 +391,7 @@ def get_price(card_id: str, v: Optional[int] = None):
     return {"card_id": cache_key, "prices": prices, "cached": False}
 
 # ------------------------------------------------------
-# EVERYTHING ELSE BELOW IS UNCHANGED
+# EVERYTHING ELSE (UNCHANGED)
 # ------------------------------------------------------
 @app.get("/prices/dons")
 def get_dons_prices():
