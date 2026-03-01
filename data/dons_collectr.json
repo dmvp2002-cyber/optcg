@@ -60,21 +60,21 @@
     "source": "collectr"
   },
   "don::DON!! Card (Robin) (Gold)": {
-    "usd": 188.83,
-    "eur": 141.62,
+    "usd": 187.18,
+    "eur": 140.38,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655918.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (One Piece Day Dallas 2025)": {
+    "usd": 184.77,
+    "eur": 138.58,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Uta) (Gold)": {
     "usd": 184.5,
     "eur": 138.38,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (One Piece Day Dallas 2025)": {
-    "usd": 184.37,
-    "eur": 138.28,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Ace) (Gold)": {
@@ -89,16 +89,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Luffy) (Gold)": {
+    "usd": 164.34,
+    "eur": 123.25,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587706.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Chopper) (Gold)": {
     "usd": 159.06,
     "eur": 119.3,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655914.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Luffy) (Gold)": {
-    "usd": 156.94,
-    "eur": 117.7,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587706.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Vivi) (Gold)": {
@@ -131,6 +131,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655138.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::Don!! Nami, Boa Hancock [Gold] (JP)": {
+    "usd": 120.0,
+    "eur": 90.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10034168.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Bonney) (Gold)": {
     "usd": 119.64,
     "eur": 89.73,
@@ -138,8 +144,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 112.54,
-    "eur": 84.41,
+    "usd": 117.27,
+    "eur": 87.95,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -156,8 +162,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Rebecca) (Gold)": {
-    "usd": 106.27,
-    "eur": 79.7,
+    "usd": 106.37,
+    "eur": 79.78,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586550.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -165,12 +171,6 @@
     "usd": 102.96,
     "eur": 77.22,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655896.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::ELBAPH Don!! (JP)": {
-    "usd": 100.25,
-    "eur": 75.19,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10033480.webp?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
