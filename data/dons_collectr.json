@@ -1,7 +1,7 @@
 {
   "don::Monkey.D.Luffy (Red Bull Double Don!!) (Winner)": {
-    "usd": 9999.01,
-    "eur": 7499.26,
+    "usd": 9999.0,
+    "eur": 7499.25,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681873.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -24,8 +24,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Boa Hancock) (Gold)": {
-    "usd": 86.05,
-    "eur": 64.54,
+    "usd": 84.65,
+    "eur": 63.49,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_677571.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -36,8 +36,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Nami) (Gold)": {
-    "usd": 79.43,
-    "eur": 59.57,
+    "usd": 79.33,
+    "eur": 59.5,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_677559.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -78,8 +78,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Uta) (Gold)": {
-    "usd": 38.08,
-    "eur": 28.56,
+    "usd": 37.6,
+    "eur": 28.2,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_677567.avif?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -143,16 +143,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10034168.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Bonney) (Gold)": {
-    "usd": 119.64,
-    "eur": 89.73,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655112.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
+    "usd": 119.73,
+    "eur": 89.8,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 117.27,
-    "eur": 87.95,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (Bonney) (Gold)": {
+    "usd": 119.02,
+    "eur": 89.27,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655112.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! (JP)": {
@@ -185,6 +185,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655896.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::Special DON!! Set Vol. 1-3 [Set of 3]": {
+    "usd": 95.56,
+    "eur": 71.67,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_620144.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card Pack Vol. 2": {
     "usd": 92.5,
     "eur": 69.38,
@@ -197,40 +203,34 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586481.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::Special DON!! Set Vol. 1-3 [Set of 3]": {
-    "usd": 90.47,
-    "eur": 67.85,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_620144.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
-    "usd": 90.33,
-    "eur": 67.75,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Usopp) (Gold)": {
     "usd": 87.68,
     "eur": 65.76,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655911.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
+    "usd": 87.23,
+    "eur": 65.42,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Pudding) (Gold)": {
-    "usd": 87.18,
-    "eur": 65.39,
+    "usd": 86.7,
+    "eur": 65.03,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655141.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Red Bull Double Don!!)": {
+    "usd": 83.33,
+    "eur": 62.5,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Portgas Don!! (JP)": {
     "usd": 82.39,
     "eur": 61.79,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033437.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 82.37,
-    "eur": 61.78,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Reiju) (Gold)": {
@@ -251,6 +251,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586884.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Rosinante) (Gold)": {
+    "usd": 81.12,
+    "eur": 60.84,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587191.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::Uta Don!! (JP)": {
     "usd": 80.09,
     "eur": 60.07,
@@ -261,12 +267,6 @@
     "usd": 79.36,
     "eur": 59.52,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655134.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Rosinante) (Gold)": {
-    "usd": 78.56,
-    "eur": 58.92,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587191.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::GRE4N BOYZ Don!! (JP)": {
@@ -288,8 +288,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Marco) (Gold)": {
-    "usd": 76.0,
-    "eur": 57.0,
+    "usd": 76.66,
+    "eur": 57.49,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655111.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -300,8 +300,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Teach) (Gold)": {
-    "usd": 73.67,
-    "eur": 55.25,
+    "usd": 73.71,
+    "eur": 55.28,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655126.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -315,6 +315,12 @@
     "usd": 71.8,
     "eur": 53.85,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029447.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Boa Hancock) (Gold) (JP)": {
+    "usd": 71.8,
+    "eur": 53.85,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029432.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Crocodile) (Gold)": {
@@ -348,8 +354,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Nico Robin) (Gold)": {
-    "usd": 65.82,
-    "eur": 49.36,
+    "usd": 65.51,
+    "eur": 49.13,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_677569.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -381,12 +387,6 @@
     "usd": 61.8,
     "eur": 46.35,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029373.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Boa Hancock) (Gold) (JP)": {
-    "usd": 61.8,
-    "eur": 46.35,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029432.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Teach) (Gold) (JP)": {
@@ -438,8 +438,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Big Mom) (Gold)": {
-    "usd": 54.23,
-    "eur": 40.67,
+    "usd": 54.11,
+    "eur": 40.58,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587954.webp?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -455,6 +455,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033419.webp?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Teal)": {
+    "usd": 52.23,
+    "eur": 39.17,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_483170.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Nami) (Gold) (JP)": {
     "usd": 51.8,
     "eur": 38.85,
@@ -465,12 +471,6 @@
     "usd": 51.45,
     "eur": 38.59,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586188.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Teal)": {
-    "usd": 50.98,
-    "eur": 38.23,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_483170.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Rebecca Don!! (Gold) (JP)": {
@@ -492,8 +492,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Rob Lucci) (Gold)": {
-    "usd": 46.11,
-    "eur": 34.58,
+    "usd": 45.39,
+    "eur": 34.04,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655121.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -501,12 +501,6 @@
     "usd": 48.2,
     "eur": 36.15,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033452.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Smoker) (Gold) (JP)": {
-    "usd": 47.8,
-    "eur": 35.85,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029409.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Kaido Gold (JP)": {
@@ -534,8 +528,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Sugar) (Gold)": {
-    "usd": 45.85,
-    "eur": 34.39,
+    "usd": 46.02,
+    "eur": 34.52,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655516.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -546,8 +540,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Dragon) (Gold)": {
-    "usd": 44.52,
-    "eur": 33.39,
+    "usd": 44.46,
+    "eur": 33.34,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655115.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -575,6 +569,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029403.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Smoker) (Gold) (JP)": {
+    "usd": 41.8,
+    "eur": 31.35,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029409.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Vegapunk) (Gold) (JP)": {
     "usd": 41.8,
     "eur": 31.35,
@@ -585,12 +585,6 @@
     "usd": 41.62,
     "eur": 31.21,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655487.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Lim) (Gold)": {
-    "usd": 41.44,
-    "eur": 31.08,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655483.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Hody Jones) (Gold)": {
@@ -609,6 +603,12 @@
     "usd": 41.03,
     "eur": 30.77,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655486.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Lim) (Gold)": {
+    "usd": 41.02,
+    "eur": 30.77,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655483.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Iceberg) (Gold)": {
@@ -642,8 +642,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Ivankov) (Gold)": {
-    "usd": 38.54,
-    "eur": 28.91,
+    "usd": 38.79,
+    "eur": 29.09,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586191.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -651,12 +651,6 @@
     "usd": 38.33,
     "eur": 28.75,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10032263.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Gear 5)": {
-    "usd": 37.71,
-    "eur": 28.28,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_539205.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Hannyabal) (Gold)": {
@@ -695,6 +689,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029444.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Gear 5)": {
+    "usd": 35.19,
+    "eur": 26.39,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_539205.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::1st Anniversary DON!! Card Pack": {
     "usd": 34.8,
     "eur": 26.1,
@@ -725,16 +725,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_525340.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Bronze)": {
+    "usd": 32.98,
+    "eur": 24.73,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_483171.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::Reiju Don!! (JP)": {
     "usd": 32.93,
     "eur": 24.7,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033442.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Bronze)": {
-    "usd": 32.82,
-    "eur": 24.62,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_483171.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Buggy) (Gold) (JP)": {
@@ -810,8 +810,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Red Bull Don!!)": {
-    "usd": 25.13,
-    "eur": 18.85,
+    "usd": 25.29,
+    "eur": 18.97,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681871.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -864,8 +864,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Yellow)": {
-    "usd": 20.25,
-    "eur": 15.19,
+    "usd": 20.28,
+    "eur": 15.21,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_482238.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -906,14 +906,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Zoro)": {
-    "usd": 3.75,
-    "eur": 2.81,
+    "usd": 3.63,
+    "eur": 2.72,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593830.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Boa Hancock)": {
-    "usd": 2.55,
-    "eur": 1.91,
+    "usd": 2.5,
+    "eur": 1.88,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655117.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -942,21 +942,15 @@
     "source": "collectr"
   },
   "don::DON!! Card (Dracule Mihawk) (Gold)": {
-    "usd": 13.66,
-    "eur": 10.25,
+    "usd": 13.36,
+    "eur": 10.02,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_672186.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Trafalgar Law)": {
-    "usd": 3.92,
-    "eur": 2.94,
+    "usd": 3.78,
+    "eur": 2.83,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593825.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Egghead) (Gold)": {
-    "usd": 12.54,
-    "eur": 9.4,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_672190.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Queen Don!! (JP)": {
@@ -965,9 +959,15 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033445.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Egghead) (Gold)": {
+    "usd": 12.26,
+    "eur": 9.2,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_672190.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Perona)": {
-    "usd": 2.89,
-    "eur": 2.17,
+    "usd": 2.91,
+    "eur": 2.18,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593817.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -984,15 +984,9 @@
     "source": "collectr"
   },
   "don::DON!! Card (Black and Gold)": {
-    "usd": 10.74,
-    "eur": 8.05,
+    "usd": 10.68,
+    "eur": 8.01,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_623626.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Boa Hancock) (Double Pack Set Vol. 4)": {
-    "usd": 10.71,
-    "eur": 8.03,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_557078.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Sakazuki Don!! (JP)": {
@@ -1001,9 +995,15 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033448.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Boa Hancock) (Double Pack Set Vol. 4)": {
+    "usd": 10.49,
+    "eur": 7.87,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_557078.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Vivi)": {
-    "usd": 2.18,
-    "eur": 1.64,
+    "usd": 2.43,
+    "eur": 1.82,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593827.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1014,13 +1014,13 @@
     "source": "collectr"
   },
   "don::DON!! Card (Ace)": {
-    "usd": 3.32,
-    "eur": 2.49,
+    "usd": 3.31,
+    "eur": 2.48,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593801.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Uta)": {
-    "usd": 2.67,
+    "usd": 2.66,
     "eur": 2.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593826.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
@@ -1032,21 +1032,15 @@
     "source": "collectr"
   },
   "don::DON!! Card (Luffy)": {
-    "usd": 1.6,
-    "eur": 1.2,
+    "usd": 1.4,
+    "eur": 1.05,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593814.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Shanks)": {
-    "usd": 1.23,
-    "eur": 0.92,
+    "usd": 1.28,
+    "eur": 0.96,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655122.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Donquixote Rosinante) (Devil Fruits Collection Vol. 3)": {
-    "usd": 8.84,
-    "eur": 6.63,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_649750.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Boa Hancock) (Foil) (JP)": {
@@ -1061,9 +1055,15 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_517477.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Donquixote Rosinante) (Devil Fruits Collection Vol. 3)": {
+    "usd": 8.71,
+    "eur": 6.53,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_649750.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Donquixote Doflamingo)": {
-    "usd": 2.59,
-    "eur": 1.94,
+    "usd": 2.56,
+    "eur": 1.92,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593804.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1079,28 +1079,34 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_675812.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Trafalgar Law, Eustass Kid and Monkey.D.Luffy) (Double Pack Set Vol. 4)": {
-    "usd": 8.21,
-    "eur": 6.16,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_557080.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Gecko Moria)": {
-    "usd": 2.37,
-    "eur": 1.78,
+    "usd": 2.26,
+    "eur": 1.69,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593807.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Gol.D.Roger) (Gold)": {
-    "usd": 8.15,
-    "eur": 6.11,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_660710.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (Trafalgar Law, Eustass Kid and Monkey.D.Luffy) (Double Pack Set Vol. 4)": {
+    "usd": 8.16,
+    "eur": 6.12,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_557080.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Yamato)": {
-    "usd": 1.08,
-    "eur": 0.81,
+    "usd": 1.07,
+    "eur": 0.8,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655136.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Gol.D.Roger) (Gold)": {
+    "usd": 8.07,
+    "eur": 6.05,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_660710.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Bonney)": {
+    "usd": 1.44,
+    "eur": 1.08,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655113.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Enel)": {
@@ -1121,40 +1127,34 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029449.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Bonney)": {
-    "usd": 1.4,
-    "eur": 1.05,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655113.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::Special DON!! Card Pack DP-04": {
     "usd": 7.71,
     "eur": 5.78,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_557077.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Manga) (Alternate Art)": {
-    "usd": 7.64,
-    "eur": 5.73,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_456059.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Portgas.D.Ace) (Devil Fruits Collection Vol. 2)": {
-    "usd": 7.57,
-    "eur": 5.68,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_593448.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Nami)": {
-    "usd": 1.15,
-    "eur": 0.86,
+    "usd": 1.14,
+    "eur": 0.85,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655898.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Manga) (Alternate Art)": {
+    "usd": 7.49,
+    "eur": 5.62,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_456059.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Special DON!! Card Pack DP-01": {
     "usd": 7.42,
     "eur": 5.56,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_521201.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Portgas.D.Ace) (Devil Fruits Collection Vol. 2)": {
+    "usd": 7.38,
+    "eur": 5.54,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_593448.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Chopper)": {
@@ -1182,8 +1182,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Reiju)": {
-    "usd": 1.67,
-    "eur": 1.25,
+    "usd": 1.63,
+    "eur": 1.22,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593820.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1211,16 +1211,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029396.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Op-Op Fruit) (Devil Fruits Collection Vol. 3)": {
-    "usd": 6.21,
-    "eur": 4.66,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_649751.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Yamato) (Foil) (JP)": {
     "usd": 6.2,
     "eur": 4.65,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029452.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Rosinante)": {
+    "usd": 1.64,
+    "eur": 1.23,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_593822.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Luffy vs. Crocodile) (Devil Fruits Collection Vol. 1)": {
@@ -1229,16 +1229,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_525667.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (English Version 2nd Anniversary Set)": {
+  "don::DON!! Card (Op-Op Fruit) (Devil Fruits Collection Vol. 3)": {
     "usd": 6.12,
     "eur": 4.59,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_635475.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_649751.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Rosinante)": {
-    "usd": 1.7,
-    "eur": 1.27,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_593822.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (English Version 2nd Anniversary Set)": {
+    "usd": 6.02,
+    "eur": 4.51,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_635475.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Pudding) (Foil) (JP)": {
@@ -1254,9 +1254,15 @@
     "source": "collectr"
   },
   "don::DON!! Card (Carrot)": {
-    "usd": 1.11,
-    "eur": 0.83,
+    "usd": 1.09,
+    "eur": 0.82,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655139.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Sabo) (Devil Fruits Collection Vol. 2)": {
+    "usd": 5.69,
+    "eur": 4.27,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_593449.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Sabo)": {
@@ -1265,21 +1271,15 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593823.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Sabo) (Devil Fruits Collection Vol. 2)": {
-    "usd": 5.6,
-    "eur": 4.2,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_593449.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Manga) (Double Pack Set Volume 2)": {
-    "usd": 5.5,
-    "eur": 4.12,
+    "usd": 5.35,
+    "eur": 4.01,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_530120.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Tin Pack Set Vol. 1 -Monkey.D.Luffy-)": {
-    "usd": 4.49,
-    "eur": 3.37,
+    "usd": 4.37,
+    "eur": 3.28,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_624674.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1290,8 +1290,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Jinbe)": {
-    "usd": 0.82,
-    "eur": 0.61,
+    "usd": 0.77,
+    "eur": 0.58,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655135.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1349,12 +1349,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_672598.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Kaido)": {
-    "usd": 1.24,
-    "eur": 0.93,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_593811.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Sakazuki)": {
     "usd": 0.68,
     "eur": 0.51,
@@ -1362,8 +1356,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (GEAR5 Luffy)": {
-    "usd": 1.15,
-    "eur": 0.86,
+    "usd": 1.12,
+    "eur": 0.84,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655119.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1373,21 +1367,27 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029402.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Kaido)": {
+    "usd": 1.24,
+    "eur": 0.93,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_593811.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Luffy) (Special DON!! Set Vol. 1)": {
-    "usd": 4.53,
-    "eur": 3.4,
+    "usd": 4.63,
+    "eur": 3.47,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620151.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Sabo) (Special DON!! Set Vol. 3)": {
-    "usd": 4.49,
-    "eur": 3.37,
+    "usd": 4.53,
+    "eur": 3.4,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620148.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Silhouette) (Double Pack Set Vol. 5)": {
-    "usd": 4.32,
-    "eur": 3.24,
+    "usd": 4.39,
+    "eur": 3.29,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_576485.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1416,7 +1416,7 @@
     "source": "collectr"
   },
   "don::DON!! Card (Lim)": {
-    "usd": 0.43,
+    "usd": 0.42,
     "eur": 0.32,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655482.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
@@ -1433,16 +1433,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029405.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Rob Lucci) (Foil) (JP)": {
-    "usd": 3.8,
-    "eur": 2.85,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029458.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Kyros) (Foil) (JP)": {
     "usd": 3.8,
     "eur": 2.85,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029378.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Rob Lucci) (Foil) (JP)": {
+    "usd": 3.8,
+    "eur": 2.85,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029458.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Caesar Clown) (Foil) (JP)": {
@@ -1469,16 +1469,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029408.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Vegapunk)": {
-    "usd": 0.58,
-    "eur": 0.43,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655480.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::Special DON!! Card Pack DP-03": {
     "usd": 3.73,
     "eur": 2.8,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_543906.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Vegapunk)": {
+    "usd": 0.57,
+    "eur": 0.43,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655480.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Eustass \"Captain\" Kid)": {
@@ -1494,8 +1494,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Ace) (Special DON!! Set Vol. 2)": {
-    "usd": 3.55,
-    "eur": 2.66,
+    "usd": 3.56,
+    "eur": 2.67,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620149.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1512,14 +1512,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Rebecca)": {
-    "usd": 1.06,
-    "eur": 0.8,
+    "usd": 1.03,
+    "eur": 0.77,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593819.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Silhouette) (Double Pack Set Volume 2)": {
-    "usd": 3.35,
-    "eur": 2.51,
+    "usd": 3.33,
+    "eur": 2.5,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_530119.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1529,22 +1529,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_483145.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Donquixote Doflamingo) (Double Pack Set Vol. 9)": {
-    "usd": 3.28,
-    "eur": 2.46,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_672736.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::Special DON!! Card Pack DP-06": {
     "usd": 3.28,
     "eur": 2.46,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_617844.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Gold)": {
-    "usd": 3.24,
-    "eur": 2.43,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_482236.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (Donquixote Doflamingo) (Double Pack Set Vol. 9)": {
+    "usd": 3.25,
+    "eur": 2.44,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_672736.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Shanks) (JP)": {
@@ -1572,20 +1566,20 @@
     "source": "collectr"
   },
   "don::DON!! Card (Whitebeard)": {
-    "usd": 0.73,
-    "eur": 0.55,
+    "usd": 0.67,
+    "eur": 0.5,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593828.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Crocodile) (Double Pack Set Vol. 9)": {
-    "usd": 3.11,
-    "eur": 2.33,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_672738.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (Gold)": {
+    "usd": 3.16,
+    "eur": 2.37,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_482236.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Katakuri) (Double Pack Set Vol. 7)": {
-    "usd": 3.0,
-    "eur": 2.25,
+    "usd": 2.97,
+    "eur": 2.23,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_636745.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1595,33 +1589,33 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_651980.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Shirahoshi)": {
-    "usd": 0.53,
-    "eur": 0.4,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655513.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Pudding)": {
-    "usd": 0.5,
-    "eur": 0.38,
+    "usd": 0.55,
+    "eur": 0.41,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655140.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Gear 4 Luffy)": {
-    "usd": 0.57,
-    "eur": 0.43,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655895.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (Shirahoshi)": {
+    "usd": 0.56,
+    "eur": 0.42,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655513.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Smoker)": {
-    "usd": 0.49,
-    "eur": 0.37,
+    "usd": 0.47,
+    "eur": 0.35,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655133.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Gear 4 Luffy)": {
+    "usd": 0.52,
+    "eur": 0.39,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655895.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Rob Lucci)": {
-    "usd": 0.28,
-    "eur": 0.21,
+    "usd": 0.27,
+    "eur": 0.2,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655120.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1643,6 +1637,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029421.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Crocodile) (Double Pack Set Vol. 9)": {
+    "usd": 2.79,
+    "eur": 2.09,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_672738.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Shattered) (Double Pack Set Vol. 5)": {
     "usd": 2.75,
     "eur": 2.06,
@@ -1650,14 +1650,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Oden)": {
-    "usd": 0.48,
-    "eur": 0.36,
+    "usd": 0.46,
+    "eur": 0.35,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593816.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Big Mom)": {
-    "usd": 0.5,
-    "eur": 0.38,
+    "usd": 0.49,
+    "eur": 0.37,
     "image_url": "https://public.getcollectr.com/public-assets/images/fc4902aa-e68d-45d4-8e88-396b6d59ba8d.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1677,6 +1677,12 @@
     "usd": 2.54,
     "eur": 1.91,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_636743.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Sugar)": {
+    "usd": 0.44,
+    "eur": 0.33,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655515.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Robin) (Foil) (JP)": {
@@ -1770,20 +1776,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Tin Pack Set Vol. 1 -Gol.D.Roger-)": {
-    "usd": 2.1,
-    "eur": 1.58,
+    "usd": 2.09,
+    "eur": 1.57,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_624673.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Sugar)": {
-    "usd": 0.42,
-    "eur": 0.32,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655515.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (King)": {
-    "usd": 0.4,
-    "eur": 0.3,
+    "usd": 0.39,
+    "eur": 0.29,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593813.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1794,14 +1794,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Buggy)": {
-    "usd": 0.92,
-    "eur": 0.69,
+    "usd": 0.91,
+    "eur": 0.68,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655130.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Ivankov)": {
-    "usd": 0.48,
-    "eur": 0.36,
+    "usd": 0.47,
+    "eur": 0.35,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593810.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1835,28 +1835,28 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029457.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Vegapunk) (JP)": {
-    "usd": 2.3,
-    "eur": 1.72,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029430.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Sugar) (JP)": {
     "usd": 2.3,
     "eur": 1.72,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029401.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Lim) (JP)": {
+  "don::DON!! Card (Vegapunk) (JP)": {
     "usd": 2.3,
     "eur": 1.72,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029454.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029430.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Hannyabal) (JP)": {
     "usd": 2.3,
     "eur": 1.72,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029424.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Lim) (JP)": {
+    "usd": 2.3,
+    "eur": 1.72,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029454.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Caesar Clown) (JP)": {
@@ -1871,16 +1871,22 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029427.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Iceberg)": {
+    "usd": 0.52,
+    "eur": 0.39,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_593809.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Buggy) (Double Pack Set Vol. 6)": {
-    "usd": 2.29,
-    "eur": 1.72,
+    "usd": 2.26,
+    "eur": 1.69,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_605125.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Iceberg)": {
-    "usd": 0.55,
-    "eur": 0.41,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_593809.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (Nico Robin)": {
+    "usd": 1.79,
+    "eur": 1.34,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_677568.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (OP-02 Exclusive)": {
@@ -1895,57 +1901,51 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10030027.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Ivankov & Sanji) (Double Pack Set Vol. 3)": {
+    "usd": 2.15,
+    "eur": 1.61,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_542684.webp?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Kalgara)": {
     "usd": 0.36,
     "eur": 0.27,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655741.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Nico Robin)": {
-    "usd": 1.9,
-    "eur": 1.42,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_677568.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Ivankov & Sanji) (Double Pack Set Vol. 3)": {
-    "usd": 2.16,
-    "eur": 1.62,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_542684.webp?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Sanji)": {
-    "usd": 0.53,
-    "eur": 0.4,
+    "usd": 0.54,
+    "eur": 0.41,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655916.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (3D Text)": {
-    "usd": 2.0,
-    "eur": 1.5,
+    "usd": 1.99,
+    "eur": 1.49,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_544805.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Usopp)": {
-    "usd": 0.52,
-    "eur": 0.39,
+    "usd": 0.54,
+    "eur": 0.41,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655912.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (2Y) (Double Pack Set Vol. 8)": {
-    "usd": 1.92,
-    "eur": 1.44,
+    "usd": 1.88,
+    "eur": 1.41,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_651174.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Hody Jones)": {
-    "usd": 0.51,
-    "eur": 0.38,
+    "usd": 0.48,
+    "eur": 0.36,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593808.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (2nd Anniversary Tournament)": {
-    "usd": 1.64,
-    "eur": 1.23,
+    "usd": 1.62,
+    "eur": 1.22,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_600706.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1956,8 +1956,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (3D) (Double Pack Set Vol. 8)": {
-    "usd": 1.54,
-    "eur": 1.16,
+    "usd": 1.51,
+    "eur": 1.13,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_651175.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -1980,56 +1980,56 @@
     "source": "collectr"
   },
   "don::DON!! Card (Queen)": {
-    "usd": 0.41,
-    "eur": 0.31,
+    "usd": 0.42,
+    "eur": 0.32,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_593818.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Kyros)": {
-    "usd": 0.23,
-    "eur": 0.17,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655742.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Koby) (Double Pack Set Vol. 7)": {
-    "usd": 1.04,
-    "eur": 0.78,
+    "usd": 1.0,
+    "eur": 0.75,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_636744.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Alternate Art)": {
-    "usd": 0.21,
-    "eur": 0.16,
+    "usd": 0.25,
+    "eur": 0.19,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_646574.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Dracule Mihawk)": {
-    "usd": 0.31,
-    "eur": 0.23,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_672185.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (Kyros)": {
+    "usd": 0.22,
+    "eur": 0.17,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655742.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Egghead)": {
-    "usd": 0.34,
-    "eur": 0.26,
+    "usd": 0.33,
+    "eur": 0.25,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_672188.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Caesar Clown)": {
+  "don::DON!! Card (Dracule Mihawk)": {
     "usd": 0.3,
+    "eur": 0.22,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_672185.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Caesar Clown)": {
+    "usd": 0.29,
     "eur": 0.22,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655485.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Hannyabal)": {
-    "usd": 0.25,
-    "eur": 0.19,
+    "usd": 0.24,
+    "eur": 0.18,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655125.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Gol.D.Roger)": {
-    "usd": 0.25,
-    "eur": 0.19,
+    "usd": 0.26,
+    "eur": 0.2,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_660744.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
