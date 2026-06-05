@@ -126,9 +126,15 @@
     "source": "collectr"
   },
   "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 155.7,
-    "eur": 116.77,
+    "usd": 157.92,
+    "eur": 118.44,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Perona) (Gold)": {
+    "usd": 153.34,
+    "eur": 115.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! (JP)": {
@@ -137,16 +143,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10031802.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Shanks) (Gold) (JP)": {
+    "usd": 150.0,
+    "eur": 112.5,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::Don!! Nami, Boa Hancock [Gold] (JP)": {
     "usd": 150.0,
     "eur": 112.5,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10034168.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Perona) (Gold)": {
-    "usd": 148.35,
-    "eur": 111.26,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
@@ -159,12 +165,6 @@
     "usd": 133.71,
     "eur": 100.28,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586810.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Shanks) (Gold) (JP)": {
-    "usd": 140.0,
-    "eur": 105.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Enel) (Gold)": {
