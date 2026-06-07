@@ -72,21 +72,21 @@
     "source": "collectr"
   },
   "don::DON!! Card (Boa Hancock) (Gold)": {
-    "usd": 209.57,
-    "eur": 157.18,
+    "usd": 205.49,
+    "eur": 154.12,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Uta) (Gold)": {
+    "usd": 191.77,
+    "eur": 143.83,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Nami) (Gold)": {
     "usd": 191.28,
     "eur": 143.46,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Uta) (Gold)": {
-    "usd": 189.77,
-    "eur": 142.33,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Shanks) (Gold) (JP)": {
@@ -105,6 +105,12 @@
     "usd": 167.46,
     "eur": 125.59,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655918.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Perona) (Gold)": {
+    "usd": 165.44,
+    "eur": 124.08,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Shanks) (Gold)": {
@@ -141,12 +147,6 @@
     "usd": 158.45,
     "eur": 118.84,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Perona) (Gold)": {
-    "usd": 156.2,
-    "eur": 117.15,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Don!! Nami, Boa Hancock [Gold] (JP)": {
