@@ -149,15 +149,9 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_541544.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Super Pre-Release Starter Decks 1-4 [Set of 4]": {
-    "usd": 2952.32,
-    "eur": 2214.24,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_411372.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::The Time of Battle Booster Box Case": {
-    "usd": 2865.28,
-    "eur": 2148.96,
+    "usd": 2836.92,
+    "eur": 2127.69,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_689338.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -168,8 +162,8 @@
     "source": "collectr"
   },
   "sealed::The Azure Sea's Seven Booster Box Case": {
-    "usd": 2666.76,
-    "eur": 2000.07,
+    "usd": 2670.76,
+    "eur": 2003.07,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_665599.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -177,6 +171,12 @@
     "usd": 2615.37,
     "eur": 1961.53,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628347.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Adventure on Kami's Island Booster Box Case": {
+    "usd": 2515.03,
+    "eur": 1886.27,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_682058.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }

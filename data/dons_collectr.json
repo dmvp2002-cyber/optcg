@@ -24,14 +24,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Zoro) (Gold)": {
-    "usd": 527.48,
-    "eur": 395.61,
+    "usd": 568.21,
+    "eur": 426.16,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587192.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
-    "usd": 342.86,
-    "eur": 257.14,
+    "usd": 344.31,
+    "eur": 258.23,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -60,8 +60,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Luffy) (Gold)": {
-    "usd": 218.48,
-    "eur": 163.86,
+    "usd": 220.6,
+    "eur": 165.45,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587706.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -96,9 +96,15 @@
     "source": "collectr"
   },
   "don::DON!! Card (One Piece Day Dallas 2025)": {
-    "usd": 177.86,
-    "eur": 133.4,
+    "usd": 178.68,
+    "eur": 134.01,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Perona) (Gold)": {
+    "usd": 171.44,
+    "eur": 128.58,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Robin) (Gold)": {
@@ -107,34 +113,28 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655918.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Perona) (Gold)": {
-    "usd": 165.44,
-    "eur": 124.08,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Shanks) (Gold)": {
     "usd": 163.18,
     "eur": 122.39,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (GEAR5 Luffy) (Gold)": {
-    "usd": 161.37,
-    "eur": 121.03,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! (JP)": {
     "usd": 160.0,
     "eur": 120.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10031802.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10031798.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Red Bull Double Don!!)": {
     "usd": 159.52,
     "eur": 119.64,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (GEAR5 Luffy) (Gold)": {
+    "usd": 159.23,
+    "eur": 119.42,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Judge Promo)": {
@@ -165,12 +165,6 @@
     "usd": 133.71,
     "eur": 100.28,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586810.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Enel) (Gold)": {
-    "usd": 129.6,
-    "eur": 97.2,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
