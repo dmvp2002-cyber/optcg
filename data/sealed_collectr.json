@@ -71,6 +71,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_485834.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
+    "usd": 7168.41,
+    "eur": 5376.31,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::Paramount War Booster Box Case": {
     "usd": 6606.67,
     "eur": 4955.0,
@@ -83,15 +89,9 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_563835.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
-    "usd": 6363.45,
-    "eur": 4772.59,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Carrying On His Will Booster Box Case": {
-    "usd": 6284.68,
-    "eur": 4713.51,
+    "usd": 6284.62,
+    "eur": 4713.47,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -108,8 +108,8 @@
     "source": "collectr"
   },
   "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 5563.44,
-    "eur": 4172.58,
+    "usd": 5273.75,
+    "eur": 3955.31,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -149,9 +149,15 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_541544.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Super Pre-Release Starter Decks 1-4 [Set of 4]": {
+    "usd": 2952.32,
+    "eur": 2214.24,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_411372.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::The Time of Battle Booster Box Case": {
-    "usd": 2836.92,
-    "eur": 2127.69,
+    "usd": 2825.48,
+    "eur": 2119.11,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_689338.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -171,12 +177,6 @@
     "usd": 2615.37,
     "eur": 1961.53,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628347.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::Adventure on Kami's Island Booster Box Case": {
-    "usd": 2515.03,
-    "eur": 1886.27,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_682058.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
