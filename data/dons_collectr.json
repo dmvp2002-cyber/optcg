@@ -30,8 +30,8 @@
     "source": "collectr"
   },
   "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
-    "usd": 414.06,
-    "eur": 310.55,
+    "usd": 467.01,
+    "eur": 350.26,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -53,16 +53,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586723.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Luffy) (Gold)": {
+    "usd": 224.2,
+    "eur": 168.15,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587706.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::Monkey D. Luffy DON!! [Championship 2023] (JP)": {
     "usd": 224.05,
     "eur": 168.04,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033545.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Luffy) (Gold)": {
-    "usd": 220.6,
-    "eur": 165.45,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587706.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Ace) (Gold)": {
@@ -102,8 +102,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Perona) (Gold)": {
-    "usd": 171.44,
-    "eur": 128.58,
+    "usd": 175.75,
+    "eur": 131.81,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -111,6 +111,18 @@
     "usd": 167.46,
     "eur": 125.59,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655918.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Red Bull Double Don!!)": {
+    "usd": 166.98,
+    "eur": 125.23,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Judge Promo)": {
+    "usd": 163.42,
+    "eur": 122.56,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_693163.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Shanks) (Gold)": {
@@ -125,24 +137,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10031798.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 159.52,
-    "eur": 119.64,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (GEAR5 Luffy) (Gold)": {
-    "usd": 159.23,
-    "eur": 119.42,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Judge Promo)": {
-    "usd": 159.16,
-    "eur": 119.37,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_693163.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Vivi) (Gold)": {
     "usd": 158.45,
     "eur": 118.84,
@@ -153,6 +147,12 @@
     "usd": 150.0,
     "eur": 112.5,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10034168.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (GEAR5 Luffy) (Gold)": {
+    "usd": 147.87,
+    "eur": 110.9,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
