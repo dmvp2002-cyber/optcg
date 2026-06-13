@@ -84,8 +84,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Uta) (Gold)": {
-    "usd": 191.77,
-    "eur": 143.83,
+    "usd": 195.2,
+    "eur": 146.4,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -102,14 +102,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (One Piece Day Dallas 2025)": {
-    "usd": 179.44,
-    "eur": 134.58,
+    "usd": 179.64,
+    "eur": 134.73,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Perona) (Gold)": {
-    "usd": 175.75,
-    "eur": 131.81,
+    "usd": 177.68,
+    "eur": 133.26,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -143,6 +143,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (GEAR5 Luffy) (Gold) (JP)": {
+    "usd": 150.0,
+    "eur": 112.5,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029447.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::Don!! Nami, Boa Hancock [Gold] (JP)": {
     "usd": 150.0,
     "eur": 112.5,
@@ -150,8 +156,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (GEAR5 Luffy) (Gold)": {
-    "usd": 146.58,
-    "eur": 109.94,
+    "usd": 145.43,
+    "eur": 109.07,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -162,9 +168,9 @@
     "source": "collectr"
   },
   "don::DON!! Card (Yamato) (Gold)": {
-    "usd": 133.71,
-    "eur": 100.28,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586810.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "usd": 142.31,
+    "eur": 106.73,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655137.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
