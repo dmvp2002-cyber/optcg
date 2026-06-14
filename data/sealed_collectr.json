@@ -6,8 +6,8 @@
     "source": "collectr"
   },
   "sealed::Pillars of Strength Booster Box Case": {
-    "usd": 19250.0,
-    "eur": 14437.5,
+    "usd": 30000.0,
+    "eur": 22500.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_477177.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -72,8 +72,8 @@
     "source": "collectr"
   },
   "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
-    "usd": 6641.36,
-    "eur": 4981.02,
+    "usd": 6790.35,
+    "eur": 5092.76,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -83,16 +83,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Carrying On His Will Booster Box Case": {
+    "usd": 6568.0,
+    "eur": 4926.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::Emperors in the New World Booster Box Case": {
     "usd": 6566.67,
     "eur": 4925.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_563835.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::Carrying On His Will Booster Box Case": {
-    "usd": 6219.28,
-    "eur": 4664.46,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Extra Booster: Anime 25th Collection Box Case": {
@@ -108,8 +108,8 @@
     "source": "collectr"
   },
   "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 5468.13,
-    "eur": 4101.1,
+    "usd": 5470.14,
+    "eur": 4102.61,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -123,6 +123,12 @@
     "usd": 3746.28,
     "eur": 2809.71,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_666892.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Super Pre-Release Starter Decks 1-4 [Set of 4]": {
+    "usd": 3535.54,
+    "eur": 2651.65,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_411372.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Devil Fruits Collection Vol. 2 Case": {
@@ -143,22 +149,10 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628453.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Super Pre-Release Starter Decks 1-4 [Set of 4]": {
-    "usd": 3317.41,
-    "eur": 2488.06,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_411372.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Double Pack Set Volume 3 Display Case": {
     "usd": 3000.0,
     "eur": 2250.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_541544.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::The Time of Battle Booster Box Case": {
-    "usd": 2803.65,
-    "eur": 2102.74,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_689338.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Two Legends Booster Box Case": {
@@ -167,9 +161,15 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_542505.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::The Time of Battle Booster Box Case": {
+    "usd": 2750.37,
+    "eur": 2062.78,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_689338.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::The Azure Sea's Seven Booster Box Case": {
-    "usd": 2678.59,
-    "eur": 2008.94,
+    "usd": 2682.99,
+    "eur": 2012.24,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_665599.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
