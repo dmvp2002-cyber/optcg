@@ -24,8 +24,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Zoro) (Gold)": {
-    "usd": 602.8,
-    "eur": 452.1,
+    "usd": 612.66,
+    "eur": 459.5,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587192.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -66,14 +66,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Ace) (Gold)": {
-    "usd": 215.8,
-    "eur": 161.85,
+    "usd": 216.46,
+    "eur": 162.34,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587957.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Boa Hancock) (Gold)": {
-    "usd": 205.49,
-    "eur": 154.12,
+    "usd": 201.26,
+    "eur": 150.94,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -95,27 +95,27 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (One Piece Day Dallas 2025)": {
+    "usd": 181.02,
+    "eur": 135.77,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Perona) (Gold)": {
+    "usd": 180.78,
+    "eur": 135.59,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Shanks) (Gold) (JP)": {
     "usd": 180.0,
     "eur": 135.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (One Piece Day Dallas 2025)": {
-    "usd": 179.64,
-    "eur": 134.73,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Perona) (Gold)": {
-    "usd": 179.17,
-    "eur": 134.38,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 168.89,
-    "eur": 126.67,
+    "usd": 170.61,
+    "eur": 127.96,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -155,6 +155,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10034168.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Yamato) (Gold)": {
+    "usd": 147.49,
+    "eur": 110.62,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655137.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (GEAR5 Luffy) (Gold)": {
     "usd": 145.43,
     "eur": 109.07,
@@ -165,12 +171,6 @@
     "usd": 144.49,
     "eur": 108.37,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Yamato) (Gold)": {
-    "usd": 142.31,
-    "eur": 106.73,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655137.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
