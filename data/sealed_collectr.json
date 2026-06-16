@@ -5,12 +5,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/images/23c7c1db-010d-4c84-a033-992e80c9f1dc.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Pillars of Strength Booster Box Case": {
-    "usd": 30000.0,
-    "eur": 22500.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_477177.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Double Pack Set Volume 2 Display Case": {
     "usd": 15000.0,
     "eur": 11250.0,
@@ -71,9 +65,15 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_485834.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Pillars of Strength Booster Box Case": {
+    "usd": 8000.0,
+    "eur": 6000.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_477177.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
-    "usd": 6790.35,
-    "eur": 5092.76,
+    "usd": 7222.52,
+    "eur": 5416.89,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -96,8 +96,8 @@
     "source": "collectr"
   },
   "sealed::Extra Booster: Anime 25th Collection Box Case": {
-    "usd": 5941.43,
-    "eur": 4456.07,
+    "usd": 6032.7,
+    "eur": 4524.52,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_594070.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -108,8 +108,8 @@
     "source": "collectr"
   },
   "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 5470.14,
-    "eur": 4102.61,
+    "usd": 5570.46,
+    "eur": 4177.85,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -119,22 +119,22 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_515081.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Extra Booster: One Piece Heroines Edition Box Case": {
-    "usd": 3661.32,
-    "eur": 2745.99,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_666892.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "sealed::Devil Fruits Collection Vol. 2 Case": {
+    "usd": 3949.5,
+    "eur": 2962.12,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_593447.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Super Pre-Release Starter Decks 1-4 [Set of 4]": {
-    "usd": 3552.46,
-    "eur": 2664.35,
+    "usd": 3504.4,
+    "eur": 2628.3,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_411372.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Devil Fruits Collection Vol. 2 Case": {
-    "usd": 3500.0,
-    "eur": 2625.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_593447.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "sealed::Extra Booster: One Piece Heroines Edition Box Case": {
+    "usd": 3445.64,
+    "eur": 2584.23,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_666892.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::500 Years in the Future Booster Box Case": {
@@ -167,10 +167,10 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_665599.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::The Time of Battle Booster Box Case": {
-    "usd": 2672.45,
-    "eur": 2004.34,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_689338.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "sealed::Super Pre-Release Starter Deck 1: Straw Hat Crew": {
+    "usd": 2663.2,
+    "eur": 1997.4,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_409506.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Legacy of the Master Booster Box Case": {
