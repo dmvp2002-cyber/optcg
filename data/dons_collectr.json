@@ -24,8 +24,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Zoro) (Gold)": {
-    "usd": 612.66,
-    "eur": 459.5,
+    "usd": 619.99,
+    "eur": 464.99,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587192.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -65,6 +65,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033545.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Shanks) (Gold) (JP)": {
+    "usd": 220.0,
+    "eur": 165.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Ace) (Gold)": {
     "usd": 216.46,
     "eur": 162.34,
@@ -102,8 +108,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Perona) (Gold)": {
-    "usd": 181.91,
-    "eur": 136.43,
+    "usd": 184.85,
+    "eur": 138.64,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -113,15 +119,9 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Shanks) (Gold) (JP)": {
-    "usd": 180.0,
-    "eur": 135.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Robin) (Gold)": {
-    "usd": 167.46,
-    "eur": 125.59,
+    "usd": 167.29,
+    "eur": 125.47,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655918.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -132,8 +132,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Shanks) (Gold)": {
-    "usd": 162.84,
-    "eur": 122.13,
+    "usd": 162.58,
+    "eur": 121.94,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -156,14 +156,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Yamato) (Gold)": {
-    "usd": 145.3,
-    "eur": 108.98,
+    "usd": 145.54,
+    "eur": 109.16,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655137.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (GEAR5 Luffy) (Gold)": {
-    "usd": 145.02,
-    "eur": 108.77,
+    "usd": 144.96,
+    "eur": 108.72,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
