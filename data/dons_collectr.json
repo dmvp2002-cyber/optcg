@@ -47,12 +47,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586723.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::Don!! Zoro [Gold] (JP)": {
-    "usd": 240.46,
-    "eur": 180.34,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Luffy) (Gold)": {
     "usd": 228.8,
     "eur": 171.6,
@@ -65,10 +59,10 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033545.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Shanks) (Gold) (JP)": {
-    "usd": 220.0,
-    "eur": 165.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::Don!! Zoro [Gold] (JP)": {
+    "usd": 219.03,
+    "eur": 164.27,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Ace) (Gold)": {
@@ -83,22 +77,28 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10031798.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Shanks) (Gold) (JP)": {
+    "usd": 200.0,
+    "eur": 150.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Boa Hancock) (Gold)": {
     "usd": 199.3,
     "eur": 149.48,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Red Bull Double Don!!)": {
+    "usd": 194.42,
+    "eur": 145.81,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Uta) (Gold)": {
     "usd": 193.27,
     "eur": 144.95,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 187.62,
-    "eur": 140.72,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Perona) (Gold)": {
@@ -120,8 +120,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Judge Promo)": {
-    "usd": 168.88,
-    "eur": 126.66,
+    "usd": 170.8,
+    "eur": 128.1,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_693163.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
