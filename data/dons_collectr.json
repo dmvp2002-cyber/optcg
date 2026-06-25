@@ -23,16 +23,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_561656.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
+    "usd": 648.23,
+    "eur": 486.17,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Zoro) (Gold)": {
     "usd": 644.45,
     "eur": 483.34,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587192.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
-    "usd": 568.71,
-    "eur": 426.53,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Uta & Ado Don!! [One Piece Day] (JP)": {
@@ -71,9 +71,15 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587957.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Red Bull Double Don!!)": {
+    "usd": 201.5,
+    "eur": 151.12,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! (JP)": {
-    "usd": 200.0,
-    "eur": 150.0,
+    "usd": 180.0,
+    "eur": 135.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10031798.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -84,15 +90,9 @@
     "source": "collectr"
   },
   "don::DON!! Card (Boa Hancock) (Gold)": {
-    "usd": 197.9,
-    "eur": 148.43,
+    "usd": 195.94,
+    "eur": 146.95,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 194.42,
-    "eur": 145.81,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Uta) (Gold)": {
@@ -138,8 +138,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Shanks) (Gold)": {
-    "usd": 162.58,
-    "eur": 121.94,
+    "usd": 162.36,
+    "eur": 121.77,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -162,8 +162,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (GEAR5 Luffy) (Gold)": {
-    "usd": 145.1,
-    "eur": 108.82,
+    "usd": 145.27,
+    "eur": 108.95,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
