@@ -24,8 +24,8 @@
     "source": "collectr"
   },
   "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
-    "usd": 738.32,
-    "eur": 553.74,
+    "usd": 748.38,
+    "eur": 561.28,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -65,6 +65,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587706.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Red Bull Double Don!!)": {
+    "usd": 228.09,
+    "eur": 171.07,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::Monkey D. Luffy DON!! [Championship 2023] (JP)": {
     "usd": 224.05,
     "eur": 168.04,
@@ -72,15 +78,9 @@
     "source": "collectr"
   },
   "don::DON!! Card (Ace) (Gold)": {
-    "usd": 209.29,
-    "eur": 156.97,
+    "usd": 213.37,
+    "eur": 160.03,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587957.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 201.5,
-    "eur": 151.12,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Shanks) (Gold) (JP)": {
@@ -96,14 +96,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Uta) (Gold)": {
-    "usd": 193.27,
-    "eur": 144.95,
+    "usd": 195.25,
+    "eur": 146.44,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Perona) (Gold)": {
-    "usd": 186.45,
-    "eur": 139.84,
+    "usd": 188.2,
+    "eur": 141.15,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
