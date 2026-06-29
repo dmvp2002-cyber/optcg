@@ -83,12 +83,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Extra Booster: Anime 25th Collection Box Case": {
-    "usd": 6743.97,
-    "eur": 5057.98,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_594070.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Paramount War Booster Box Case": {
     "usd": 6606.67,
     "eur": 4955.0,
@@ -99,6 +93,12 @@
     "usd": 6445.63,
     "eur": 4834.22,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Extra Booster: Anime 25th Collection Box Case": {
+    "usd": 6389.62,
+    "eur": 4792.22,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_594070.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::A Fist of Divine Speed Booster Box Case": {
