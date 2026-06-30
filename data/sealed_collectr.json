@@ -17,16 +17,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450087.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Awakening of the New Era Booster Box Case": {
-    "usd": 12452.87,
-    "eur": 9339.65,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_498735.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Memorial Collection Booster Box Case": {
     "usd": 12000.0,
     "eur": 9000.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_521162.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Awakening of the New Era Booster Box Case": {
+    "usd": 11694.26,
+    "eur": 8770.69,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_498735.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Super Pre-Release Starter Deck 1: Straw Hat Crew Display": {
@@ -77,12 +77,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_563835.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
-    "usd": 6844.92,
-    "eur": 5133.69,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Paramount War Booster Box Case": {
     "usd": 6606.67,
     "eur": 4955.0,
@@ -101,15 +95,21 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_594070.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
+    "usd": 6302.02,
+    "eur": 4726.52,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::A Fist of Divine Speed Booster Box Case": {
-    "usd": 5792.36,
-    "eur": 4344.27,
+    "usd": 5800.0,
+    "eur": 4350.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 5284.31,
-    "eur": 3963.23,
+    "usd": 5477.56,
+    "eur": 4108.17,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -126,20 +126,20 @@
     "source": "collectr"
   },
   "sealed::Super Pre-Release Starter Decks 1-4 [Set of 4]": {
-    "usd": 3724.93,
-    "eur": 2793.7,
+    "usd": 3560.99,
+    "eur": 2670.74,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_411372.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::500 Years in the Future Booster Box Case": {
-    "usd": 3426.12,
-    "eur": 2569.59,
+    "usd": 3470.72,
+    "eur": 2603.04,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_532107.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Extra Booster: One Piece Heroines Edition Box Case": {
-    "usd": 3392.92,
-    "eur": 2544.69,
+    "usd": 3402.28,
+    "eur": 2551.71,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_666892.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -162,8 +162,8 @@
     "source": "collectr"
   },
   "sealed::The Azure Sea's Seven Booster Box Case": {
-    "usd": 2705.39,
-    "eur": 2029.04,
+    "usd": 2708.83,
+    "eur": 2031.62,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_665599.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
