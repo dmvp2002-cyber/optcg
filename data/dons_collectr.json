@@ -24,8 +24,8 @@
     "source": "collectr"
   },
   "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
-    "usd": 748.38,
-    "eur": 561.28,
+    "usd": 754.31,
+    "eur": 565.73,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -102,8 +102,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Boa Hancock) (Gold)": {
-    "usd": 187.57,
-    "eur": 140.68,
+    "usd": 186.89,
+    "eur": 140.17,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -144,9 +144,21 @@
     "source": "collectr"
   },
   "don::DON!! Card (Shanks) (Gold)": {
-    "usd": 161.27,
-    "eur": 120.95,
+    "usd": 161.21,
+    "eur": 120.91,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (GEAR5 Luffy) (Gold)": {
+    "usd": 152.67,
+    "eur": 114.5,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
+    "usd": 150.04,
+    "eur": 112.53,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (GEAR5 Luffy) (Gold) (JP)": {
@@ -159,18 +171,6 @@
     "usd": 150.0,
     "eur": 112.5,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10034168.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (GEAR5 Luffy) (Gold)": {
-    "usd": 148.8,
-    "eur": 111.6,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 148.52,
-    "eur": 111.39,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
