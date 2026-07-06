@@ -24,8 +24,8 @@
     "source": "collectr"
   },
   "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
-    "usd": 764.23,
-    "eur": 573.17,
+    "usd": 770.9,
+    "eur": 578.17,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -107,16 +107,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Uta) (Gold)": {
-    "usd": 182.46,
-    "eur": 136.84,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (Nami) (Gold)": {
+    "usd": 182.17,
+    "eur": 136.63,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Nami) (Gold)": {
-    "usd": 181.16,
-    "eur": 135.87,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "don::DON!! Card (Uta) (Gold)": {
+    "usd": 180.98,
+    "eur": 135.73,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Judge Promo)": {
@@ -129,6 +129,12 @@
     "usd": 172.1,
     "eur": 129.07,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655137.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::GRE4N BOYZ Don!! (JP)": {
+    "usd": 167.6,
+    "eur": 125.7,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10033479.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Robin) (Gold)": {
@@ -165,12 +171,6 @@
     "usd": 150.0,
     "eur": 112.5,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029447.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::Don!! Nami, Boa Hancock [Gold] (JP)": {
-    "usd": 150.0,
-    "eur": 112.5,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10034168.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
