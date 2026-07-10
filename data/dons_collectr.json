@@ -23,6 +23,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_561656.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (LA Dodgers 2026 Promo)": {
+    "usd": 800.0,
+    "eur": 600.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_696699.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
     "usd": 770.9,
     "eur": 578.17,
@@ -33,6 +39,12 @@
     "usd": 700.4,
     "eur": 525.3,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587192.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Elbaph Luffy) (May Treasure Cup 2026)": {
+    "usd": 277.04,
+    "eur": 207.78,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_702306.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Trafalgar Law) (Gold)": {
@@ -72,8 +84,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Luffy) (Gold)": {
-    "usd": 233.54,
-    "eur": 175.16,
+    "usd": 237.88,
+    "eur": 178.41,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587706.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -107,21 +119,21 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655137.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Nami) (Gold)": {
+    "usd": 185.29,
+    "eur": 138.97,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Boa Hancock) (Gold)": {
     "usd": 184.58,
     "eur": 138.44,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Nami) (Gold)": {
-    "usd": 182.17,
-    "eur": 136.63,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Uta) (Gold)": {
-    "usd": 178.17,
-    "eur": 133.63,
+    "usd": 178.98,
+    "eur": 134.23,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -144,14 +156,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Vivi) (Gold)": {
-    "usd": 163.44,
-    "eur": 122.58,
+    "usd": 164.03,
+    "eur": 123.02,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (GEAR5 Luffy) (Gold)": {
-    "usd": 162.11,
-    "eur": 121.58,
+    "usd": 163.56,
+    "eur": 122.67,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -159,18 +171,6 @@
     "usd": 160.23,
     "eur": 120.17,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 150.04,
-    "eur": 112.53,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (GEAR5 Luffy) (Gold) (JP)": {
-    "usd": 150.0,
-    "eur": 112.5,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029447.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
