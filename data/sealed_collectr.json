@@ -18,8 +18,8 @@
     "source": "collectr"
   },
   "sealed::Awakening of the New Era Booster Box Case": {
-    "usd": 13498.9,
-    "eur": 10124.17,
+    "usd": 13032.3,
+    "eur": 9774.22,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_498735.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -27,6 +27,12 @@
     "usd": 12000.0,
     "eur": 9000.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_521162.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Premium Booster Booster Box Case": {
+    "usd": 10600.0,
+    "eur": 7950.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_545400.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Super Pre-Release Starter Deck 1: Straw Hat Crew Display": {
@@ -53,12 +59,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_412137.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Premium Booster Booster Box Case": {
-    "usd": 8900.0,
-    "eur": 6675.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_545400.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Kingdoms of Intrigue Booster Box Case": {
     "usd": 8500.0,
     "eur": 6375.0,
@@ -78,9 +78,15 @@
     "source": "collectr"
   },
   "sealed::A Fist of Divine Speed Booster Box Case": {
-    "usd": 7245.14,
-    "eur": 5433.86,
+    "usd": 7239.45,
+    "eur": 5429.59,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
+    "usd": 7196.79,
+    "eur": 5397.59,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Extra Booster: Anime 25th Collection Box Case": {
@@ -89,21 +95,9 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_594070.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
-    "usd": 6601.55,
-    "eur": 4951.16,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::Paramount War Booster Box Case": {
-    "usd": 6451.0,
-    "eur": 4838.25,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Carrying On His Will Booster Box Case": {
-    "usd": 6204.97,
-    "eur": 4653.73,
+    "usd": 5880.05,
+    "eur": 4410.04,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -132,8 +126,8 @@
     "source": "collectr"
   },
   "sealed::Extra Booster: One Piece Heroines Edition Box Case": {
-    "usd": 3562.24,
-    "eur": 2671.68,
+    "usd": 3579.8,
+    "eur": 2684.85,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_666892.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -144,8 +138,8 @@
     "source": "collectr"
   },
   "sealed::Premium Booster Vol. 2 - Booster Box Case": {
-    "usd": 3363.94,
-    "eur": 2522.95,
+    "usd": 3379.93,
+    "eur": 2534.95,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628453.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -177,6 +171,12 @@
     "usd": 2687.87,
     "eur": 2015.9,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628347.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Super Pre-Release Starter Deck 1: Straw Hat Crew": {
+    "usd": 2663.2,
+    "eur": 1997.4,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_409506.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
