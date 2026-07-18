@@ -95,6 +95,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_594070.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Paramount War Booster Box Case": {
+    "usd": 6451.0,
+    "eur": 4838.25,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::Carrying On His Will Booster Box Case": {
     "usd": 5880.05,
     "eur": 4410.04,
@@ -171,12 +177,6 @@
     "usd": 2687.87,
     "eur": 2015.9,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628347.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::Super Pre-Release Starter Deck 1: Straw Hat Crew": {
-    "usd": 2663.2,
-    "eur": 1997.4,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_409506.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
