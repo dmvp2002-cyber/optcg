@@ -78,8 +78,8 @@
     "source": "collectr"
   },
   "sealed::A Fist of Divine Speed Booster Box Case": {
-    "usd": 7253.05,
-    "eur": 5439.79,
+    "usd": 7251.79,
+    "eur": 5438.84,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -90,8 +90,8 @@
     "source": "collectr"
   },
   "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
-    "usd": 7185.97,
-    "eur": 5389.48,
+    "usd": 7185.99,
+    "eur": 5389.49,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -102,15 +102,21 @@
     "source": "collectr"
   },
   "sealed::Carrying On His Will Booster Box Case": {
-    "usd": 6057.82,
-    "eur": 4543.36,
+    "usd": 5601.31,
+    "eur": 4200.98,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 5077.31,
-    "eur": 3807.98,
+    "usd": 5179.01,
+    "eur": 3884.26,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::One Piece Tin Pack Set Vol. 1 Display Case": {
+    "usd": 5000.69,
+    "eur": 3750.52,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_620281.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Starter Deck 9: Yamato Display Case": {
@@ -162,8 +168,8 @@
     "source": "collectr"
   },
   "sealed::The Azure Sea's Seven Booster Box Case": {
-    "usd": 2732.84,
-    "eur": 2049.63,
+    "usd": 2749.25,
+    "eur": 2061.94,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_665599.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -171,12 +177,6 @@
     "usd": 2687.87,
     "eur": 2015.9,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628347.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::Adventure on Kami's Island Booster Box Case": {
-    "usd": 2676.39,
-    "eur": 2007.29,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_682058.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
