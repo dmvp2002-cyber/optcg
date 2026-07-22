@@ -90,26 +90,20 @@
     "source": "collectr"
   },
   "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
-    "usd": 7185.99,
-    "eur": 5389.49,
+    "usd": 7193.69,
+    "eur": 5395.27,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Paramount War Booster Box Case": {
-    "usd": 6451.0,
-    "eur": 4838.25,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Carrying On His Will Booster Box Case": {
-    "usd": 5601.31,
-    "eur": 4200.98,
+    "usd": 5502.44,
+    "eur": 4126.83,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 5179.01,
-    "eur": 3884.26,
+    "usd": 5177.9,
+    "eur": 3883.42,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -168,9 +162,15 @@
     "source": "collectr"
   },
   "sealed::The Azure Sea's Seven Booster Box Case": {
-    "usd": 2749.25,
-    "eur": 2061.94,
+    "usd": 2763.29,
+    "eur": 2072.47,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_665599.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Adventure on Kami's Island Booster Box Case": {
+    "usd": 2704.85,
+    "eur": 2028.64,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_682058.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Legacy of the Master Booster Box Case": {
