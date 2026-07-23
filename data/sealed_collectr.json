@@ -59,16 +59,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_412137.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Kingdoms of Intrigue Booster Box Case": {
-    "usd": 8500.0,
-    "eur": 6375.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_485834.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Pillars of Strength Booster Box Case": {
     "usd": 8000.0,
     "eur": 6000.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_477177.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Kingdoms of Intrigue Booster Box Case": {
+    "usd": 7999.99,
+    "eur": 5999.99,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_485834.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Emperors in the New World Booster Box Case": {
@@ -77,16 +77,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_563835.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Extra Booster: Anime 25th Collection Box Case": {
+    "usd": 7338.5,
+    "eur": 5503.88,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_594070.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::A Fist of Divine Speed Booster Box Case": {
     "usd": 7251.79,
     "eur": 5438.84,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::Extra Booster: Anime 25th Collection Box Case": {
-    "usd": 7249.65,
-    "eur": 5437.24,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_594070.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
@@ -162,14 +162,14 @@
     "source": "collectr"
   },
   "sealed::The Azure Sea's Seven Booster Box Case": {
-    "usd": 2763.29,
-    "eur": 2072.47,
+    "usd": 2793.09,
+    "eur": 2094.82,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_665599.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Adventure on Kami's Island Booster Box Case": {
-    "usd": 2704.85,
-    "eur": 2028.64,
+    "usd": 2719.35,
+    "eur": 2039.51,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_682058.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
