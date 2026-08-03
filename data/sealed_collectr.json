@@ -71,12 +71,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_594070.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::A Fist of Divine Speed Booster Box Case": {
-    "usd": 7251.79,
-    "eur": 5438.84,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Emperors in the New World Booster Box Case": {
     "usd": 7127.1,
     "eur": 5345.33,
@@ -101,6 +95,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::A Fist of Divine Speed Booster Box Case": {
+    "usd": 6211.0,
+    "eur": 4658.25,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::Carrying On His Will Booster Box Case": {
     "usd": 6095.19,
     "eur": 4571.39,
@@ -120,14 +120,14 @@
     "source": "collectr"
   },
   "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 4791.63,
-    "eur": 3593.72,
+    "usd": 4997.09,
+    "eur": 3747.82,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Wings of the Captain Booster Box Case": {
-    "usd": 4361.53,
-    "eur": 3271.15,
+    "usd": 4330.78,
+    "eur": 3248.09,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_515081.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -174,8 +174,8 @@
     "source": "collectr"
   },
   "sealed::The Azure Sea's Seven Booster Box Case": {
-    "usd": 2809.09,
-    "eur": 2106.82,
+    "usd": 2821.54,
+    "eur": 2116.15,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_665599.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
