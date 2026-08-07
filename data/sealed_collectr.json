@@ -83,10 +83,10 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_563835.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Paramount War Booster Box Case": {
-    "usd": 6451.0,
-    "eur": 4838.25,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "sealed::A Fist of Divine Speed Booster Box Case": {
+    "usd": 6756.17,
+    "eur": 5067.13,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
@@ -99,12 +99,6 @@
     "usd": 6050.23,
     "eur": 4537.67,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::A Fist of Divine Speed Booster Box Case": {
-    "usd": 5841.12,
-    "eur": 4380.84,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::One Piece Tin Pack Set Vol. 1 Display Case": {
@@ -126,8 +120,8 @@
     "source": "collectr"
   },
   "sealed::Wings of the Captain Booster Box Case": {
-    "usd": 4330.78,
-    "eur": 3248.09,
+    "usd": 4310.48,
+    "eur": 3232.86,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_515081.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -138,8 +132,8 @@
     "source": "collectr"
   },
   "sealed::Extra Booster: One Piece Heroines Edition Box Case": {
-    "usd": 3632.03,
-    "eur": 2724.02,
+    "usd": 3629.57,
+    "eur": 2722.18,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_666892.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -161,22 +155,28 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_411372.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Paramount War Booster Box Case": {
+    "usd": 3078.22,
+    "eur": 2308.66,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::Double Pack Set Volume 3 Display Case": {
     "usd": 3000.0,
     "eur": 2250.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_541544.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Adventure on Kami's Island Booster Box Case": {
+    "usd": 2844.88,
+    "eur": 2133.66,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_682058.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::The Azure Sea's Seven Booster Box Case": {
     "usd": 2836.18,
     "eur": 2127.13,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_665599.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::Adventure on Kami's Island Booster Box Case": {
-    "usd": 2822.59,
-    "eur": 2116.94,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_682058.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
