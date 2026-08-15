@@ -137,6 +137,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Enel) (Gold)": {
+    "usd": 178.44,
+    "eur": 133.83,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Judge Promo)": {
     "usd": 177.17,
     "eur": 132.88,
@@ -165,12 +171,6 @@
     "usd": 164.79,
     "eur": 123.59,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655918.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Enel) (Gold)": {
-    "usd": 163.79,
-    "eur": 122.84,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
