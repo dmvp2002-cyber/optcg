@@ -65,6 +65,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_477177.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Kingdoms of Intrigue Booster Box Case": {
+    "usd": 7999.99,
+    "eur": 5999.99,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_485834.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::Extra Booster: Anime 25th Collection Box Case": {
     "usd": 7666.28,
     "eur": 5749.71,
@@ -75,12 +81,6 @@
     "usd": 7295.48,
     "eur": 5471.61,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_563835.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::Kingdoms of Intrigue Booster Box Case": {
-    "usd": 7199.99,
-    "eur": 5399.99,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_485834.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::A Fist of Divine Speed Booster Box Case": {
@@ -123,6 +123,12 @@
     "usd": 4917.92,
     "eur": 3688.44,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::The World's Strongest Warriors Booster Box Case": {
+    "usd": 4601.56,
+    "eur": 3451.17,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_704754.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Wings of the Captain Booster Box Case": {
@@ -171,12 +177,6 @@
     "usd": 2878.79,
     "eur": 2159.09,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_682058.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::The Azure Sea's Seven Booster Box Case": {
-    "usd": 2849.42,
-    "eur": 2137.07,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_665599.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
