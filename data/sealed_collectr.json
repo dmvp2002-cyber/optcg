@@ -17,16 +17,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450087.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Awakening of the New Era Booster Box Case": {
-    "usd": 12248.97,
-    "eur": 9186.73,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_498735.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Memorial Collection Booster Box Case": {
     "usd": 12000.0,
     "eur": 9000.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_521162.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Awakening of the New Era Booster Box Case": {
+    "usd": 11915.23,
+    "eur": 8936.42,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_498735.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Premium Booster Booster Box Case": {
@@ -65,6 +65,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_477177.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Kingdoms of Intrigue Booster Box Case": {
+    "usd": 7999.99,
+    "eur": 5999.99,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_485834.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::Extra Booster: Anime 25th Collection Box Case": {
     "usd": 7666.28,
     "eur": 5749.71,
@@ -72,20 +78,14 @@
     "source": "collectr"
   },
   "sealed::Emperors in the New World Booster Box Case": {
-    "usd": 7295.48,
-    "eur": 5471.61,
+    "usd": 7303.87,
+    "eur": 5477.9,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_563835.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Kingdoms of Intrigue Booster Box Case": {
-    "usd": 7199.99,
-    "eur": 5399.99,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_485834.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::A Fist of Divine Speed Booster Box Case": {
-    "usd": 6671.36,
-    "eur": 5003.52,
+    "usd": 6744.73,
+    "eur": 5058.55,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -95,22 +95,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
-    "usd": 6134.54,
-    "eur": 4600.9,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Carrying On His Will Booster Box Case": {
-    "usd": 6075.9,
-    "eur": 4556.92,
+    "usd": 6276.47,
+    "eur": 4707.35,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 5180.04,
-    "eur": 3885.03,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
+    "usd": 6136.33,
+    "eur": 4602.25,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::One Piece Tin Pack Set Vol. 1 Display Case": {
@@ -125,15 +119,21 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_502980.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
+    "usd": 4800.69,
+    "eur": 3600.52,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::The World's Strongest Warriors Booster Box Case": {
-    "usd": 4486.58,
-    "eur": 3364.93,
+    "usd": 4389.67,
+    "eur": 3292.25,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_704754.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Wings of the Captain Booster Box Case": {
-    "usd": 4310.48,
-    "eur": 3232.86,
+    "usd": 4234.06,
+    "eur": 3175.55,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_515081.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -162,8 +162,8 @@
     "source": "collectr"
   },
   "sealed::Super Pre-Release Starter Decks 1-4 [Set of 4]": {
-    "usd": 3275.31,
-    "eur": 2456.48,
+    "usd": 3283.05,
+    "eur": 2462.29,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_411372.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
