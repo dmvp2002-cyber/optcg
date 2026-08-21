@@ -60,8 +60,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 257.59,
-    "eur": 193.19,
+    "usd": 259.99,
+    "eur": 194.99,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -78,8 +78,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Luffy) (Gold)": {
-    "usd": 236.98,
-    "eur": 177.73,
+    "usd": 235.2,
+    "eur": 176.4,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587706.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -114,8 +114,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Nami) (Gold)": {
-    "usd": 203.61,
-    "eur": 152.71,
+    "usd": 202.37,
+    "eur": 151.78,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -131,12 +131,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Enel) (Gold)": {
-    "usd": 178.44,
-    "eur": 133.83,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (GEAR5 Luffy) (Gold)": {
     "usd": 178.22,
     "eur": 133.66,
@@ -147,6 +141,12 @@
     "usd": 177.17,
     "eur": 132.88,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_693163.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Enel) (Gold)": {
+    "usd": 173.67,
+    "eur": 130.25,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::GRE4N BOYZ Don!! (JP)": {
