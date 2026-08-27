@@ -36,14 +36,14 @@
     "source": "collectr"
   },
   "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
-    "usd": 640.84,
-    "eur": 480.63,
+    "usd": 644.84,
+    "eur": 483.63,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Trafalgar Law) (Gold)": {
-    "usd": 304.47,
-    "eur": 228.35,
+    "usd": 302.98,
+    "eur": 227.24,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586723.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -51,18 +51,6 @@
     "usd": 271.44,
     "eur": 203.58,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::Don!! Zoro [Gold] (JP)": {
-    "usd": 261.81,
-    "eur": 196.36,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 259.99,
-    "eur": 194.99,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Uta & Ado Don!! [One Piece Day] (JP)": {
@@ -77,10 +65,22 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10031798.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Red Bull Double Don!!)": {
+    "usd": 248.32,
+    "eur": 186.24,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Luffy) (Gold)": {
     "usd": 244.91,
     "eur": 183.68,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587706.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::Don!! Zoro [Gold] (JP)": {
+    "usd": 235.0,
+    "eur": 176.25,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Monkey D. Luffy DON!! [Championship 2023] (JP)": {
@@ -125,6 +125,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
+    "usd": 181.89,
+    "eur": 136.42,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Boa Hancock) (Gold)": {
     "usd": 181.39,
     "eur": 136.04,
@@ -135,12 +141,6 @@
     "usd": 180.02,
     "eur": 135.02,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 179.68,
-    "eur": 134.76,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Judge Promo)": {
@@ -155,6 +155,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::Uta DON!! (CN)": {
+    "usd": 169.87,
+    "eur": 127.4,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10033935.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::GRE4N BOYZ Don!! (JP)": {
     "usd": 167.6,
     "eur": 125.7,
@@ -165,12 +171,6 @@
     "usd": 165.0,
     "eur": 123.75,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Vivi) (Gold)": {
-    "usd": 164.54,
-    "eur": 123.41,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
