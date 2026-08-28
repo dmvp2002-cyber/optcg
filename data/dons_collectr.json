@@ -18,8 +18,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (LA Dodgers 2026 Promo)": {
-    "usd": 850.0,
-    "eur": 637.5,
+    "usd": 816.4,
+    "eur": 612.3,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_696699.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -95,28 +95,28 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587957.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Elbaph Luffy) (May Treasure Cup 2026)": {
+    "usd": 211.66,
+    "eur": 158.75,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_702306.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Perona) (Gold)": {
     "usd": 209.56,
     "eur": 157.17,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Nami) (Gold)": {
+    "usd": 207.09,
+    "eur": 155.32,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Yamato) (Gold)": {
     "usd": 206.95,
     "eur": 155.21,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655137.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Elbaph Luffy) (May Treasure Cup 2026)": {
-    "usd": 206.78,
-    "eur": 155.09,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_702306.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Nami) (Gold)": {
-    "usd": 202.37,
-    "eur": 151.78,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Shanks) (Gold) (JP)": {
@@ -155,12 +155,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::Uta DON!! (CN)": {
-    "usd": 169.87,
-    "eur": 127.4,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10033935.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::GRE4N BOYZ Don!! (JP)": {
     "usd": 167.6,
     "eur": 125.7,
@@ -171,6 +165,12 @@
     "usd": 165.0,
     "eur": 123.75,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Vivi) (Gold)": {
+    "usd": 164.54,
+    "eur": 123.41,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
