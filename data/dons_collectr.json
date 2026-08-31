@@ -119,12 +119,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_702306.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Shanks) (Gold) (JP)": {
-    "usd": 200.0,
-    "eur": 150.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
     "usd": 186.72,
     "eur": 140.04,
@@ -135,6 +129,12 @@
     "usd": 180.41,
     "eur": 135.31,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Shanks) (Gold) (JP)": {
+    "usd": 180.0,
+    "eur": 135.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (GEAR5 Luffy) (Gold)": {
@@ -150,8 +150,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Enel) (Gold)": {
-    "usd": 172.19,
-    "eur": 129.14,
+    "usd": 176.53,
+    "eur": 132.4,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
