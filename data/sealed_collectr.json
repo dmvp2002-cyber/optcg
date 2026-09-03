@@ -1,7 +1,7 @@
 {
   "sealed::Romance Dawn - Booster Box Case (Wave 1 - Blue Bottom)": {
-    "usd": 62316.15,
-    "eur": 46737.11,
+    "usd": 62219.74,
+    "eur": 46664.81,
     "image_url": "https://public.getcollectr.com/public-assets/images/23c7c1db-010d-4c84-a033-992e80c9f1dc.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -17,22 +17,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450087.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Memorial Collection Booster Box Case": {
-    "usd": 12000.0,
-    "eur": 9000.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_521162.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Awakening of the New Era Booster Box Case": {
     "usd": 11353.5,
     "eur": 8515.12,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_498735.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Premium Booster Booster Box Case": {
-    "usd": 10600.0,
-    "eur": 7950.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_545400.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+  "sealed::Memorial Collection Booster Box Case": {
+    "usd": 11190.48,
+    "eur": 8392.86,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_521162.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Super Pre-Release Starter Deck 1: Straw Hat Crew Display": {
@@ -59,6 +53,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_412137.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Premium Booster Booster Box Case": {
+    "usd": 9541.43,
+    "eur": 7156.07,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_545400.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::Pillars of Strength Booster Box Case": {
     "usd": 8000.0,
     "eur": 6000.0,
@@ -72,8 +72,8 @@
     "source": "collectr"
   },
   "sealed::Emperors in the New World Booster Box Case": {
-    "usd": 7258.73,
-    "eur": 5444.05,
+    "usd": 7252.5,
+    "eur": 5439.38,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_563835.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -96,8 +96,8 @@
     "source": "collectr"
   },
   "sealed::Carrying On His Will Booster Box Case": {
-    "usd": 6222.21,
-    "eur": 4666.66,
+    "usd": 6099.84,
+    "eur": 4574.88,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -120,14 +120,14 @@
     "source": "collectr"
   },
   "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 4657.06,
-    "eur": 3492.8,
+    "usd": 4617.65,
+    "eur": 3463.24,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::The World's Strongest Warriors Booster Box Case": {
-    "usd": 4171.51,
-    "eur": 3128.63,
+    "usd": 4267.58,
+    "eur": 3200.68,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_704754.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -162,8 +162,8 @@
     "source": "collectr"
   },
   "sealed::Super Pre-Release Starter Decks 1-4 [Set of 4]": {
-    "usd": 3417.58,
-    "eur": 2563.18,
+    "usd": 3419.94,
+    "eur": 2564.95,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_411372.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -174,8 +174,8 @@
     "source": "collectr"
   },
   "sealed::Adventure on Kami's Island Booster Box Case": {
-    "usd": 2902.94,
-    "eur": 2177.2,
+    "usd": 2915.06,
+    "eur": 2186.3,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_682058.png?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
     "source": "collectr"
   }
