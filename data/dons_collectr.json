@@ -108,14 +108,14 @@
     "source": "collectr"
   },
   "don::DON!! Card (Ace) (Gold)": {
-    "usd": 197.95,
-    "eur": 148.46,
+    "usd": 198.78,
+    "eur": 149.09,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587957.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Elbaph Luffy) (May Treasure Cup 2026)": {
-    "usd": 191.67,
-    "eur": 143.75,
+    "usd": 187.55,
+    "eur": 140.66,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_702306.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -155,16 +155,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Uta) (Gold)": {
-    "usd": 168.09,
-    "eur": 126.07,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::GRE4N BOYZ Don!! (JP)": {
     "usd": 167.6,
     "eur": 125.7,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033479.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Uta) (Gold)": {
+    "usd": 167.49,
+    "eur": 125.62,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Vivi) (Gold)": {
