@@ -65,12 +65,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033477.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! (JP)": {
-    "usd": 180.0,
-    "eur": 135.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10031798.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Luffy) (Gold)": {
     "usd": 243.03,
     "eur": 182.27,
@@ -137,6 +131,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! (JP)": {
+    "usd": 180.0,
+    "eur": 135.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10031798.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Boa Hancock) (Gold)": {
     "usd": 179.08,
     "eur": 134.31,
@@ -171,6 +171,12 @@
     "usd": 166.82,
     "eur": 125.11,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Shanks) (Gold)": {
+    "usd": 165.88,
+    "eur": 124.41,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
