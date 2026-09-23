@@ -144,8 +144,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Judge Promo)": {
-    "usd": 177.17,
-    "eur": 132.88,
+    "usd": 176.06,
+    "eur": 132.05,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_693163.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -167,16 +167,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Uta) (Gold)": {
-    "usd": 166.85,
-    "eur": 125.14,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Shanks) (Gold)": {
     "usd": 165.88,
     "eur": 124.41,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Uta) (Gold)": {
+    "usd": 165.17,
+    "eur": 123.88,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
