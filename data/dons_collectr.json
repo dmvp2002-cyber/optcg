@@ -47,16 +47,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586723.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::Don!! Zoro [Gold] (JP)": {
-    "usd": 284.7,
-    "eur": 213.52,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+  "don::DON!! Card (One Piece Day Dallas 2025)": {
+    "usd": 282.93,
+    "eur": 212.2,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (One Piece Day Dallas 2025)": {
-    "usd": 278.53,
-    "eur": 208.9,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+  "don::Don!! Zoro [Gold] (JP)": {
+    "usd": 268.62,
+    "eur": 201.47,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Uta & Ado Don!! [One Piece Day] (JP)": {
@@ -120,8 +120,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Elbaph Luffy) (May Treasure Cup 2026)": {
-    "usd": 187.55,
-    "eur": 140.66,
+    "usd": 183.07,
+    "eur": 137.3,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_702306.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -137,16 +137,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! (JP)": {
-    "usd": 180.0,
-    "eur": 135.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10031798.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Boa Hancock) (Gold)": {
     "usd": 179.08,
     "eur": 134.31,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Vivi) (Gold)": {
+    "usd": 177.47,
+    "eur": 133.1,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Judge Promo)": {
@@ -161,12 +161,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Vivi) (Gold)": {
-    "usd": 166.91,
-    "eur": 125.18,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Shanks) (Gold)": {
     "usd": 165.88,
     "eur": 124.41,
@@ -177,6 +171,12 @@
     "usd": 165.17,
     "eur": 123.88,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Chopper) (Gold)": {
+    "usd": 164.54,
+    "eur": 123.41,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655914.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
