@@ -132,8 +132,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Vivi) (Gold)": {
-    "usd": 177.47,
-    "eur": 133.1,
+    "usd": 179.55,
+    "eur": 134.66,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -144,8 +144,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Shanks) (Gold)": {
-    "usd": 173.29,
-    "eur": 129.97,
+    "usd": 173.72,
+    "eur": 130.29,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -161,12 +161,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Elbaph Luffy) (May Treasure Cup 2026)": {
-    "usd": 169.55,
-    "eur": 127.16,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_702306.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::Special DON!! Set Vol. 1-3 [Set of 3]": {
     "usd": 166.83,
     "eur": 125.12,
@@ -177,6 +171,12 @@
     "usd": 166.62,
     "eur": 124.97,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655914.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Uta) (Gold)": {
+    "usd": 165.7,
+    "eur": 124.27,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
