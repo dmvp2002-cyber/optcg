@@ -42,8 +42,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Trafalgar Law) (Gold)": {
-    "usd": 296.92,
-    "eur": 222.69,
+    "usd": 301.07,
+    "eur": 225.8,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586723.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -77,12 +77,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033479.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 227.59,
-    "eur": 170.69,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::Monkey D. Luffy DON!! [Championship 2023] (JP)": {
     "usd": 224.05,
     "eur": 168.04,
@@ -93,6 +87,18 @@
     "usd": 222.5,
     "eur": 166.88,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655137.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Red Bull Double Don!!)": {
+    "usd": 221.84,
+    "eur": 166.38,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Shanks) (Gold) (JP)": {
+    "usd": 220.0,
+    "eur": 165.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Nami) (Gold)": {
@@ -125,12 +131,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Shanks) (Gold) (JP)": {
-    "usd": 180.0,
-    "eur": 135.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Vivi) (Gold)": {
     "usd": 179.55,
     "eur": 134.66,
@@ -149,12 +149,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Boa Hancock) (Gold)": {
-    "usd": 173.28,
-    "eur": 129.96,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Enel) (Gold)": {
     "usd": 170.73,
     "eur": 128.05,
@@ -165,6 +159,12 @@
     "usd": 166.83,
     "eur": 125.12,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620144.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Boa Hancock) (Gold)": {
+    "usd": 166.8,
+    "eur": 125.1,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655116.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Chopper) (Gold)": {
