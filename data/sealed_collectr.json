@@ -107,16 +107,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Wings of the Captain Booster Box Case": {
-    "usd": 4361.09,
-    "eur": 3270.82,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_515081.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
     "usd": 4336.01,
     "eur": 3252.01,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Wings of the Captain Booster Box Case": {
+    "usd": 4335.0,
+    "eur": 3251.25,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_515081.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
@@ -138,8 +138,8 @@
     "source": "collectr"
   },
   "sealed::Premium Booster Vol. 2 - Booster Box Case": {
-    "usd": 3554.45,
-    "eur": 2665.84,
+    "usd": 3559.41,
+    "eur": 2669.56,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628453.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
