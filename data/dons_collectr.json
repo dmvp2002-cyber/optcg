@@ -108,21 +108,21 @@
     "source": "collectr"
   },
   "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 205.19,
-    "eur": 153.89,
+    "usd": 201.13,
+    "eur": 150.85,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
+    "usd": 200.18,
+    "eur": 150.13,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Ace) (Gold)": {
     "usd": 198.18,
     "eur": 148.63,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587957.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 192.86,
-    "eur": 144.65,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (GEAR5 Luffy) (Gold)": {
@@ -149,16 +149,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Enel) (Gold)": {
-    "usd": 170.73,
-    "eur": 128.05,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Chopper) (Gold)": {
     "usd": 168.38,
     "eur": 126.28,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655914.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Enel) (Gold)": {
+    "usd": 167.65,
+    "eur": 125.74,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Special DON!! Set Vol. 1-3 [Set of 3]": {
