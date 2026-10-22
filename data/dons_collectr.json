@@ -54,8 +54,8 @@
     "source": "collectr"
   },
   "don::Don!! Zoro [Gold] (JP)": {
-    "usd": 269.43,
-    "eur": 202.07,
+    "usd": 284.9,
+    "eur": 213.67,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -101,16 +101,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
+    "usd": 210.2,
+    "eur": 157.65,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Perona) (Gold)": {
     "usd": 206.78,
     "eur": 155.09,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 204.91,
-    "eur": 153.68,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Ace) (Gold)": {
@@ -126,8 +126,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Vivi) (Gold)": {
-    "usd": 179.55,
-    "eur": 134.66,
+    "usd": 180.42,
+    "eur": 135.31,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -168,8 +168,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Uta) (Gold)": {
-    "usd": 165.43,
-    "eur": 124.07,
+    "usd": 165.18,
+    "eur": 123.89,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   }
