@@ -54,8 +54,8 @@
     "source": "collectr"
   },
   "don::Don!! Zoro [Gold] (JP)": {
-    "usd": 279.87,
-    "eur": 209.9,
+    "usd": 286.15,
+    "eur": 214.61,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -63,6 +63,12 @@
     "usd": 256.98,
     "eur": 192.74,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033477.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Yamato) (Gold)": {
+    "usd": 161.59,
+    "eur": 121.19,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_586810.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Luffy) (Gold)": {
@@ -77,22 +83,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033479.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Yamato) (Gold)": {
-    "usd": 161.59,
-    "eur": 121.19,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_586810.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+  "don::DON!! Card (Shanks) (Gold) (JP)": {
+    "usd": 230.0,
+    "eur": 172.5,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Monkey D. Luffy DON!! [Championship 2023] (JP)": {
     "usd": 224.05,
     "eur": 168.04,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033545.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Shanks) (Gold) (JP)": {
-    "usd": 220.0,
-    "eur": 165.0,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10029394.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Nami) (Gold)": {
