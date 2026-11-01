@@ -1,7 +1,7 @@
 {
   "sealed::Romance Dawn - Booster Box Case (Wave 1 - Blue Bottom)": {
-    "usd": 61051.88,
-    "eur": 45788.91,
+    "usd": 60861.47,
+    "eur": 45646.1,
     "image_url": "https://public.getcollectr.com/public-assets/images/23c7c1db-010d-4c84-a033-992e80c9f1dc.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -84,14 +84,14 @@
     "source": "collectr"
   },
   "sealed::A Fist of Divine Speed Booster Box Case": {
-    "usd": 5916.83,
-    "eur": 4437.62,
+    "usd": 5900.0,
+    "eur": 4425.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Carrying On His Will Booster Box Case": {
-    "usd": 5673.92,
-    "eur": 4255.44,
+    "usd": 5762.27,
+    "eur": 4321.7,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628353.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -107,27 +107,21 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 4461.39,
-    "eur": 3346.04,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::The Dominance of God Booster Box Case": {
-    "usd": 4263.31,
-    "eur": 3197.48,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_712902.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Wings of the Captain Booster Box Case": {
     "usd": 4223.1,
     "eur": 3167.33,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_515081.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::The Dominance of God Booster Box Case": {
+    "usd": 4113.67,
+    "eur": 3085.25,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_712902.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
-    "usd": 3944.05,
-    "eur": 2958.04,
+    "usd": 3946.6,
+    "eur": 2959.95,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -135,6 +129,12 @@
     "usd": 3643.85,
     "eur": 2732.89,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_704754.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
+    "usd": 3627.81,
+    "eur": 2720.86,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Extra Booster: One Piece Heroines Edition Box Case": {
@@ -167,16 +167,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620281.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Extra Booster: One Piece Heroines Edition Vol.2 - Booster Box Case": {
-    "usd": 3158.14,
-    "eur": 2368.61,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_711386.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Double Pack Set Volume 3 Display Case": {
     "usd": 3000.0,
     "eur": 2250.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_541544.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::One Piece Tin Pack Set Vol. 2 Display Case": {
+    "usd": 2999.95,
+    "eur": 2249.96,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_657219.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
