@@ -96,8 +96,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 216.53,
-    "eur": 162.4,
+    "usd": 223.29,
+    "eur": 167.47,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -119,12 +119,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587957.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 182.37,
-    "eur": 136.78,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Vivi) (Gold)": {
     "usd": 180.46,
     "eur": 135.34,
@@ -141,6 +135,12 @@
     "usd": 177.22,
     "eur": 132.91,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Red Bull Double Don!!)": {
+    "usd": 177.2,
+    "eur": 132.9,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Judge Promo)": {
@@ -174,8 +174,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Green)": {
-    "usd": 161.77,
-    "eur": 121.33,
+    "usd": 159.95,
+    "eur": 119.96,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_483167.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   }
