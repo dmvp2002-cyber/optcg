@@ -30,8 +30,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (LA Dodgers 2026 Promo)": {
-    "usd": 580.33,
-    "eur": 435.25,
+    "usd": 604.0,
+    "eur": 453.0,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_696699.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -41,16 +41,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::Don!! Zoro [Gold] (JP)": {
-    "usd": 305.0,
-    "eur": 228.75,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Trafalgar Law) (Gold)": {
     "usd": 301.65,
     "eur": 226.24,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586723.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::Don!! Zoro [Gold] (JP)": {
+    "usd": 299.0,
+    "eur": 224.25,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_10030992.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (One Piece Day Dallas 2025)": {
@@ -125,12 +125,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (GEAR5 Luffy) (Gold)": {
-    "usd": 178.78,
-    "eur": 134.09,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Shanks) (Gold)": {
     "usd": 177.22,
     "eur": 132.91,
@@ -141,6 +135,12 @@
     "usd": 177.2,
     "eur": 132.9,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (GEAR5 Luffy) (Gold)": {
+    "usd": 176.38,
+    "eur": 132.28,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Judge Promo)": {
