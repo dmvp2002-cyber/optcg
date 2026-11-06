@@ -36,8 +36,8 @@
     "source": "collectr"
   },
   "don::Monkey.D.Luffy (Red Bull Double Don!!)": {
-    "usd": 565.12,
-    "eur": 423.84,
+    "usd": 542.9,
+    "eur": 407.17,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_681872.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -83,6 +83,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033479.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
+    "usd": 231.03,
+    "eur": 173.27,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Shanks) (Gold) (JP)": {
     "usd": 230.0,
     "eur": 172.5,
@@ -93,12 +99,6 @@
     "usd": 224.05,
     "eur": 168.04,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033545.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 223.29,
-    "eur": 167.47,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Nami) (Gold)": {
@@ -131,22 +131,10 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655124.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Red Bull Double Don!!)": {
-    "usd": 177.2,
-    "eur": 132.9,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (GEAR5 Luffy) (Gold)": {
     "usd": 176.38,
     "eur": 132.28,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655118.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Judge Promo)": {
-    "usd": 173.81,
-    "eur": 130.36,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_693163.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Chopper) (Gold)": {
@@ -155,9 +143,21 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655914.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Red Bull Double Don!!)": {
+    "usd": 172.0,
+    "eur": 129.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_681870.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Judge Promo)": {
+    "usd": 169.51,
+    "eur": 127.13,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_693163.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::DON!! Card (Enel) (Gold)": {
-    "usd": 167.57,
-    "eur": 125.68,
+    "usd": 167.73,
+    "eur": 125.8,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
