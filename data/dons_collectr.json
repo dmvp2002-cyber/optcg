@@ -83,12 +83,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033479.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 231.03,
-    "eur": 173.27,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Shanks) (Gold) (JP)": {
     "usd": 230.0,
     "eur": 172.5,
@@ -99,6 +93,12 @@
     "usd": 224.05,
     "eur": 168.04,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_10033545.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
+    "usd": 218.83,
+    "eur": 164.12,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Nami) (Gold)": {
