@@ -120,21 +120,21 @@
     "source": "collectr"
   },
   "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 3704.95,
-    "eur": 2778.71,
+    "usd": 3656.09,
+    "eur": 2742.07,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "sealed::The World's Strongest Warriors Booster Box Case": {
-    "usd": 3650.15,
-    "eur": 2737.61,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_704754.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Premium Booster Vol. 2 - Booster Box Case": {
     "usd": 3596.35,
     "eur": 2697.26,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628453.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::The World's Strongest Warriors Booster Box Case": {
+    "usd": 3560.41,
+    "eur": 2670.31,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_704754.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::500 Years in the Future Booster Box Case": {
@@ -161,12 +161,6 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620281.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::The Dominance of God Booster Box Case": {
-    "usd": 3289.51,
-    "eur": 2467.13,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_712902.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Double Pack Set Volume 3 Display Case": {
     "usd": 3000.0,
     "eur": 2250.0,
@@ -177,6 +171,12 @@
     "usd": 2999.95,
     "eur": 2249.96,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_657219.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Adventure on Kami's Island Booster Box Case": {
+    "usd": 2943.0,
+    "eur": 2207.25,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_682058.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
