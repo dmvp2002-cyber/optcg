@@ -30,8 +30,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (LA Dodgers 2026 Promo)": {
-    "usd": 604.0,
-    "eur": 453.0,
+    "usd": 575.83,
+    "eur": 431.87,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_696699.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -155,16 +155,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620144.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Enel) (Gold)": {
-    "usd": 167.73,
-    "eur": 125.8,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Uta) (Gold)": {
     "usd": 165.03,
     "eur": 123.77,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Enel) (Gold)": {
+    "usd": 164.67,
+    "eur": 123.5,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Green)": {
