@@ -71,21 +71,21 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_477177.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Kingdoms of Intrigue Booster Box Case": {
-    "usd": 7199.99,
-    "eur": 5399.99,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_485834.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Emperors in the New World Booster Box Case": {
     "usd": 6333.76,
     "eur": 4750.32,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_563835.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "sealed::Kingdoms of Intrigue Booster Box Case": {
+    "usd": 6200.0,
+    "eur": 4650.0,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_485834.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "sealed::A Fist of Divine Speed Booster Box Case": {
-    "usd": 5259.32,
-    "eur": 3944.49,
+    "usd": 5354.08,
+    "eur": 4015.56,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620181.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -102,8 +102,8 @@
     "source": "collectr"
   },
   "sealed::Paramount War Booster Box Case": {
-    "usd": 4755.36,
-    "eur": 3566.52,
+    "usd": 4624.4,
+    "eur": 3468.3,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_455867.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -114,8 +114,8 @@
     "source": "collectr"
   },
   "sealed::One Piece Card Game: English Version 1st Anniversary Set": {
-    "usd": 3832.86,
-    "eur": 2874.64,
+    "usd": 3764.67,
+    "eur": 2823.5,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_536588.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -137,16 +137,16 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_532107.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Extra Booster: One Piece Heroines Edition Box Case": {
-    "usd": 3545.36,
-    "eur": 2659.02,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_666892.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::The World's Strongest Warriors Booster Box Case": {
     "usd": 3529.71,
     "eur": 2647.28,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_704754.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Extra Booster: One Piece Heroines Edition Box Case": {
+    "usd": 3519.32,
+    "eur": 2639.49,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_666892.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::Devil Fruits Collection Vol. 2 Case": {
