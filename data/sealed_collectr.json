@@ -108,20 +108,14 @@
     "source": "collectr"
   },
   "sealed::Wings of the Captain Booster Box Case": {
-    "usd": 4100.0,
-    "eur": 3075.0,
+    "usd": 4171.37,
+    "eur": 3128.53,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_515081.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
-    "usd": 3818.75,
-    "eur": 2864.06,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "sealed::Premium Booster Vol. 2 - Booster Box Case": {
-    "usd": 3626.46,
-    "eur": 2719.85,
+    "usd": 3641.09,
+    "eur": 2730.82,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_628453.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -138,8 +132,8 @@
     "source": "collectr"
   },
   "sealed::The World's Strongest Warriors Booster Box Case": {
-    "usd": 3481.86,
-    "eur": 2611.39,
+    "usd": 3459.86,
+    "eur": 2594.89,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_704754.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -153,6 +147,12 @@
     "usd": 3444.88,
     "eur": 2583.66,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_666892.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "sealed::Romance Dawn Booster Box (Wave 1 - Blue Bottom)": {
+    "usd": 3444.45,
+    "eur": 2583.34,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_450086.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "sealed::One Piece Tin Pack Set Vol. 1 Display Case": {
