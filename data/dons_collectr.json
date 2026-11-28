@@ -42,8 +42,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Trafalgar Law) (Gold)": {
-    "usd": 327.24,
-    "eur": 245.43,
+    "usd": 346.45,
+    "eur": 259.84,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586723.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -53,22 +53,22 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_620097.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
-  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
-    "usd": 267.52,
-    "eur": 200.64,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
   "don::DON!! Card (Luffy) (Gold)": {
-    "usd": 259.17,
-    "eur": 194.38,
+    "usd": 273.11,
+    "eur": 204.83,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587706.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Yamato) (Gold)": {
-    "usd": 159.48,
-    "eur": 119.61,
+    "usd": 161.43,
+    "eur": 121.07,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586810.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
+  "don::DON!! Card (Donquixote Doflamingo) (Gold)": {
+    "usd": 267.52,
+    "eur": 200.64,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587237.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::Uta & Ado Don!! [One Piece Day] (JP)": {
@@ -102,26 +102,26 @@
     "source": "collectr"
   },
   "don::DON!! Card (Nami) (Gold)": {
-    "usd": 214.85,
-    "eur": 161.14,
+    "usd": 219.3,
+    "eur": 164.48,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655899.png?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Ace) (Gold)": {
-    "usd": 207.5,
-    "eur": 155.62,
+    "usd": 218.18,
+    "eur": 163.63,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587957.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Perona) (Gold)": {
-    "usd": 206.22,
-    "eur": 154.66,
+    "usd": 206.38,
+    "eur": 154.78,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586886.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
   "don::DON!! Card (Vivi) (Gold)": {
-    "usd": 183.33,
-    "eur": 137.5,
+    "usd": 185.38,
+    "eur": 139.03,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586554.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -143,6 +143,12 @@
     "image_url": "https://public.getcollectr.com/public-assets/products/product_655914.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
+  "don::DON!! Card (Rosinante) (Gold)": {
+    "usd": 170.55,
+    "eur": 127.91,
+    "image_url": "https://public.getcollectr.com/public-assets/products/product_587191.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
+    "source": "collectr"
+  },
   "don::Special DON!! Set Vol. 1-3 [Set of 3]": {
     "usd": 169.49,
     "eur": 127.12,
@@ -156,8 +162,8 @@
     "source": "collectr"
   },
   "don::DON!! Card (Uta) (Gold)": {
-    "usd": 165.34,
-    "eur": 124.0,
+    "usd": 166.04,
+    "eur": 124.53,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_586181.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   },
@@ -165,12 +171,6 @@
     "usd": 164.42,
     "eur": 123.31,
     "image_url": "https://public.getcollectr.com/public-assets/products/product_587705.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
-    "source": "collectr"
-  },
-  "don::DON!! Card (Rosinante) (Gold)": {
-    "usd": 160.59,
-    "eur": 120.44,
-    "image_url": "https://public.getcollectr.com/public-assets/products/product_587191.jpg?optimizer=image&format=webp&width=400&quality=80&strip=metadata",
     "source": "collectr"
   }
 }
